@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://www.med.umich.edu/clinical/# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link href="./index_files/font.css" rel="stylesheet" type="text/css">
+      <base target="_blank">
+    <title>ichoxx Home Page</title>
+
+<link href="./index_files/chp-main.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style type="text/css">
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1em 0 0 0;
+  font-family: 'Montserrat';
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #1779ba;
+  color: #fefefe;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: .8rem;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  width: 170px;
+}
+[data-whatinput="mouse"] .button {
+  outline: 0;
+}
+.button:hover,
+.button:focus {
+  background-color: #14679e;
+  color: #fefefe;
+}
+
+.button svg {
+  left: -22px;
+  position: absolute;
+  top: -22px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform:  scale3d(.5, .5, .5);
+  transform:  scale3d(.5, .5, .5);
+}
+.button:hover,
+.button:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.button:hover svg,
+.button:focus svg {
+  -webkit-transform: rotate(5deg) scale3d(.5, .5, .5);
+  transform: rotate(5deg) scale3d(.5, .5, .5);
+}
+.button--lt-background {
+  background-color: #00274c;
+  color: #fefefe;
+  border: 1px solid #001a3f;
+}
+.button--lt-background:hover,
+.button--lt-background:focus {
+  background-color: #ffcb05;
+  color: #fefefe;
+}
+.button--lt-background svg {
+  fill: #ffcb05;
+}
+.button--lt-background:hover,
+.button--lt-background:focus {
+  background-color: #ffcb05;
+  color: #0a0a0a;
+  border: 1px solid #ebbc01;
+}
+.button--lt-background:hover:hover,
+.button--lt-background:hover:focus,
+.button--lt-background:focus:hover,
+.button--lt-background:focus:focus {
+  background-color: #ffcb05;
+  color: #0a0a0a;
+}
+.button--lt-background:hover svg,
+.button--lt-background:focus svg {
+  fill: #00274c;
+}
+
+
+
+
+
+</style>
+
+  <!--[if lt IE 9]>
+    	<script src="js/html5.js"></script>
+
+
+    <![endif]-->
+
+
+    <!--[if IE 8]> 
+		<link href="css/chp-ie.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]> 
+		<link href="css/chp-ie-7.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+    
+    <script type="text/javascript" async="" src="./index_files/ga.js"></script><script type="text/javascript" src="./index_files/jsapi"></script>
+<script type="text/javascript">
+google.load("feeds","1");
+function displayNews(){
+//console.log('feedfirst');
+var feed = new google.feeds.Feed("https://www.umhsheadlines.org/category/chp/feed/");
+feed.setNumEntries(5)
+feed.load(function(result) {
+if (!result.error) {
+var slideContainer = document.getElementById("headlinesfeed");
+for (var i = 0; i < result.feed.entries.length; i++) {
+var entry = result.feed.entries[i];
+var slideEntry = document.createElement("li");
+var entryURL = entry.link;
+var entryTitle = entry.title;
+var slideContent = "<a href='" + entryURL + "' class='newstitle'>"   +  entryTitle + "</a>";
+slideEntry.innerHTML=slideContent;
+slideContainer.appendChild(slideEntry);
+}
+}
+});
+}
+google.setOnLoadCallback(displayNews);
+</script><script src="./index_files/saved_resource" type="text/javascript"></script> 
+
+<script type="text/javascript">
+google.load("feeds","1");
+function displayNews(){
+//console.log('feedfirst');
+var feed = new google.feeds.Feed("https://www.umhsheadlines.org/category/echp/feed/");
+feed.setNumEntries(5)
+feed.load(function(result) {
+if (!result.error) {
+var slideContainer = document.getElementById("headlinesfeed-em");
+for (var i = 0; i < result.feed.entries.length; i++) {
+var entry = result.feed.entries[i];
+var slideEntry = document.createElement("li");
+var entryURL = entry.link;
+var entryTitle = entry.title;
+var slideContent = "<a href='" + entryURL + "' class='newstitle'>"   +  entryTitle + "</a>";
+slideEntry.innerHTML=slideContent;
+slideContainer.appendChild(slideEntry);
+}
+}
+});
+}
+google.setOnLoadCallback(displayNews);
+</script> 
+ <script>
+    function ping(){
+       $.ajax({
+          url: 'http://www.med.umich.edu/i/index.html',
+          success: function(result){
+			  document.getElementById('searchbox').action='http://googlesearch.med.umich.edu/search';
+             
+          },     
+          error: function(result){
+			  document.getElementById('searchbox').action='http://www.med.umich.edu/umhs/search/search_results.html?q=';
+             
+          }
+       });
+    }
+</script>   
+  
+	<script src="./index_files/jquery.min.js"></script>
+    
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Start of External link tracking -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('a').click(function() {
+            var eventCategory = $(this).attr('title');
+            var trackURL = $(this).attr('href');
+            var text = $(this).text();
+            trackClick(text, trackURL, eventCategory);
+        });
+    });
+    </script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6347926-3']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+    function trackClick(text, link, title) {
+        _gaq.push(['_trackEvent', text, link, title]);
+    };
+    </script>
+    <!-- End of External link tracking -->
+    <!-- BEGIN GOOGLE ANALYTICS CODE -->
+    <!-- begin code for tracking outgoing links and downloads -->
+    <script src="./index_files/gatag.js" type="text/javascript">
+    </script>
+    <!-- end code for tracking outgoing links and downloads -->
+    <!-- begin main tracking code -->
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="./index_files/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-6347926-3");
+        pageTracker._trackPageview();
+    } catch (err) {}
+    </script>
+    <!-- end main tracking code -->
+    <!-- END GOOGLE ANALYTICS CODE -->
+    <script>
+    // DOM ready
+    $(function() {
+
+        // Create the dropdown base
+        $("<select />").appendTo("nav");
+
+        // Create default option "Go to..."
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Top Site Navigation"
+        }).appendTo("nav#pri-nav select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Go To Systems"
+        }).appendTo("nav#quick-systems select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Pathology"
+        }).appendTo("nav#pathology select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Radiology"
+        }).appendTo("nav#radiology select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Pharmacy Services"
+        }).appendTo("nav#pharmacy select");
+
+
+
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Nursing"
+        }).appendTo("nav#nursing select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Safety and Professionalism"
+        }).appendTo("nav#safety select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Direcotory Services"
+        }).appendTo("nav#direcotory select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Bed Status"
+        }).appendTo("nav#bed select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Clinical Resources"
+        }).appendTo("nav#resources select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Clinical References"
+        }).appendTo("nav#references select");
+
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "Other Links"
+        }).appendTo("nav#other select");
+
+        // Populate dropdown with menu items
+        $("nav a.line-tab").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#pri-nav select");
+        });
+
+        $("nav a.quick-systems").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#quick-systems select");
+        });
+
+        $("nav a.pathology").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#pathology select");
+        });
+        $("nav a.radiology").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#radiology select");
+        });
+        $("nav a.pharmacy").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#pharmacy select");
+        });
+
+
+
+
+        $("nav a.nursing").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#nursing select");
+        });
+
+        $("nav a.safety").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#safety select");
+        });
+
+        $("nav a.directory").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#directory select");
+        });
+
+        $("nav a.bed").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#bed select");
+        });
+
+        $("nav a.resources").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#resources select");
+        });
+
+        $("nav a.references").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#references select");
+        });
+
+        $("nav a.other").each(function() {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav#other select");
+        });
+
+        // To make dropdown actually work
+        // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+        $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+        });
+
+    });
+    </script>
+    <script>
+    $(window).bind("pageshow", function(event) {
+        if (event.originalEvent.persisted) {
+            window.location.reload()
+        }
+    });
+    </script>
+</head>
+
+
+
+        </div>
+    </header>
+    <div class="wrap">
+        <div id="breaking-news">
+			<ul id="headlinesfeed-em">
+                <!--Add <li> here for a red warning text -->
+			</ul>
+        
+        
+ 
+                
+<!--
+-------------------principal---------------------------------------------
+-->
+        </div>
+        <div id="content">
+            <div id="left">
+                <nav id="pathology">
+                    <ul>
+                        <h2>principal</h2>
+                   
+                        <li>
+                            <a href="http://www.bankofamerica.com/online-banking/sign-in/">bofa</a> <strong class="pipe">|</strong> 
+                            <a href="https://login.1stnb.com/tob/live/usp-core/app/login/consumer">1stnb</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.reliant.com/public/login/index.htm">reliant</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.att.com/">att.com</a> <strong class="pipe">|</strong> 
+                            <a href="https://my.xfinity.com/">xfinity</a> <strong class="pipe">|</strong> 
+                            <a href="https://myaccount.boostmobile.com/sign-in.html">boostmobile</a> <strong class="pipe">|</strong> 
+                            <a href="http://gmail.com/">gmail</a> | 
+                            <a href="https://keep.google.com/">google keep</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.facebook.com/">facebook</a> | 
+                            <a href="https://www.tdameritrade.com/home.page">TD Ameritrade</a>  <strong class="pipe">|</strong>  
+                            <a href="https://drive.google.com/drive/my-drive">My Drive</a>  <strong class="pipe">|</strong>  
+                            <a href="https://docs.google.com/spreadsheets/d/1boZkH_hrklfSYaTMTvh5jW1r0MOsPPqjEL_Ge5mxotA/edit#gid=504902444">my expense tracker</a>  <strong class="pipe">|</strong>  
+                            <a href="https://docs.google.com/spreadsheets/d/1jAmGyJZqT_v59_t5ndsKSH1lpo2BJRPH9HFh6Yz2Y_8/edit#gid=680333604">2021</a>  <strong class="pipe">|</strong>  
+                            <a href="https://docs.google.com/document/d/1Vb4YjLWd0g7bsfomRSVcXavByldGmWU3Vxqt1a6ZbwE/edit">mis notas</a>  <strong class="pipe">|</strong>  
+                            <a href="https://github.com/ichozxc/ichozxc.github.io/blob/master/index.html">ichozxc.github.io</a>  <strong class="pipe">|</strong>  
+                            <a href="https://docs.google.com/spreadsheets/d/1B40h6GNh7ecSTHk9V2Y6BKrYAumResYL931kqTxIXsM/edit#gid=1206916439">quiniela</a>  <strong class="pipe">|</strong>  
+                            <a href="http://instagram.com/">instagram</a>   <strong class="pipe">|</strong>  
+                            <a href="https://www.mint.com">mint.com</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.mail.com/#.7518-header-logo1-1">mail.com</a>  <strong class="pipe">|</strong>   
+                            <a href="http://mail.yandex.com/">mail yandex</a>  <strong class="pipe">|</strong>  
+                            <a href="http://reddit.com/">reddit</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.columbusgasprices.com/">gas prices</a>  <strong class="pipe">|</strong>  
+                            <a href="https://access.paylocity.com/?client_id=56400b1e4bab4790b909ace559dadbc1&redirect_uri=https://login.paylocity.com/Escher/Escher_WebUI/Membership.IdentityManager/Return&response_mode=form_post&response_type=code&scope=openid+profile+offline_access+security:credential:create+security:credential:update+security:credential:delete+security:companysecuritysettings:create+security:companysecuritysettings:delete&state=OpenIdConnect.AuthenticationProperties=agBcppeYDCA_ypNhShBrLBIO1ZeUedzafFxNS-VkSkPVvspKyCrNnh03iolA-LU4lv9-lie76gXrsgulwzBkm3IgmlrhPNIp5aH0LggJ5dhc6Magnlr2tuNJN1intncdixfb2uE2nAD7Ztw_tw1k7DZ4Mr0oeazFztzyyubhLYhSef_hQXaJef5RgoRXSSd5IbdSKUy4e5ZI13N28C8m8JYrYFOW45cBMthoamluEYKMZn-E8_6xcfl9MEi74sKxSl80efTXZPvU5nuySJ8_XbJ2pABg6VS_xgENHE0xFwUFHSQF">paylocity</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.twitter.com/">twitter</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.juliestav.com/" >julie stav</a> <strong class="pipe">|</strong>
+                       </li>
+                    </ul>
+		    
+                <select><option selected="selected" value="">Pathology</option><option value="http://www.pathology.med.umich.edu/">Pathology</option><option value="https://labportal.path.med.umich.edu/antibiogram/">Antibiotic Susceptibility Report</option><option value="http://www.pathology.med.umich.edu/bloodbank/manual/">Blood Bank &amp; Transfusion</option><option value="https://www.pathology.med.umich.edu/static/apps/cms/ckfinder/userfiles/238/files/MassiveTransfusionProtocol.pdf">Massive Transfusion</option><option value="http://www.pathology.med.umich.edu/handbook/">Lab Handbook</option></select></nav>
+
+
+<!--
+-------------entretenimiento---------------------------------------------------
+-->
+                <nav id="radiology">
+                    <ul>
+                        <h2>entretenimiento</h2>
+                        <li>
+                            <a href="http://tropical100.com/index.php/salsa">tropical 100</a>  <strong class="pipe">|</strong>  
+                            <a href="http://salsapalquesabe.com/">salsapalquesabe</a>  <strong class="pipe">|</strong> 
+                            <a href="https://player.fastcast4u.com/catedralsalsa/#">catedral de la salsa</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.rcast.net/dir/salsa/page2">rcast.net</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.solarlatinclub.com/">solar latin club</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=T0t0M2CFHp0">mix salsa brava</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.salsaybachata.com/">salsa y bachata</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.pandora.com/station/play/2138528432333866004">la mejor salsa tx</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=28XnU4aOXU8">cumbias colombianas</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=xyxa1d0plOo">showroom fruit</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=rsiDkANxTXU">Swim Fashion</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=9gA2uHILDqA">Frankies Bikinis</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=sHc3EX67GBE">Desfile Paradizia</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=N2ZE-kf5p2c">Miami Swim</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=9WQfv66LX-c">roco desfile cafe</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=_SHROPvn9yA">Fruit de la Passion</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=pXBX1_O3HR0">JASMINE 2019</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=t4Nat7Uy_OQ">LULI FAMA 2021</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=KtpTw47IBK8&t">babalu 2013 </a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/results?search_query=sexy+lingerie+show">sexy lingerie show</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=3Dxk14m9xQI">Fancy Sinner</a>  <strong class="pipe">|</strong>                              
+                        </li> 
+                    </ul>
+
+
+<!--
+------------shopping----------------------------------------------------
+-->
+                <nav id="pharmacy">
+                    <ul>
+                        <h2>shopping</h2>
+
+                        <li>
+                            <a href="https://www.bestbuy.com/">bestbuy</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.microcenter.com/">microcenter</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.directron.com/">directron</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=rvfgrTYG4wQ">Triple Monitor</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=LxXITciswXc">Asus X441BA</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.bestbuy.com/site/samsung-galaxy-tab-a-2019-10-1-32gb-black/6335112.p?skuId=6335112">Galaxy Tab A (2019)</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.microcenter.com/product/602522/samsung-galaxy-tab-a---black">Samsung Galaxy Tab A</a>  <strong class="pipe">|</strong> 
+                            <a href="https://shavercheck.com">ELECTRIC SHAVER</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.amazon.com/dp/B00KQ47HL0?tag=kitchengearzone-20&linkCode=ogi&th=1&psc=1">citrus juicer</a>  <strong class="pipe">|</strong> 
+                            <a href="https://fitsewing.com/best-portable-sewing-machine/">Sewing Machine</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.amazon.com/dp/B00BX0YKX4/ref=psdc_1194464_t2_B015J6TEN8?tag=georiot-us-default-20&ascsubtag=whattowatch-us-3537263308232016000-20&geniuslink=true">Bluetooth Keyboard</a>  <strong class="pipe">|</strong> 
+                       </li> 
+                    </ul>
+               
+<!--
+--------Nursingxxx--------------------------------------------------------
+-->
+                <nav id="nursing">
+                    <ul>
+                        <h2>varios links</h2>
+
+                        <li>
+                            <a href="https://www.superbowlsquares.org/">superbowl squares</a>  <strong class="pipe">|</strong>  
+                            <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa</a>  <strong class="pipe">|</strong>  
+                            <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga</a>  <strong class="pipe">|</strong>  
+                            <a href="http://houston.eventful.com/events">houston eventful</a>  <strong class="pipe">|</strong>  
+
+                        </li>
+
+                    </ul>
+
+
+
+            </div>
+            <!--center-->
+            <div id="center">
+
+
+<!--
+----------deportes------------------------------------------------------
+-->
+                <nav id="safety">
+                    <ul>
+                        <h2>deportes</h2>
+
+                        <li>
+                            <a href="https://www.espn.com.mx/">espn.com.mx</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.ligamx.net/">ligamx.net</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.mediotiempo.com/">mediotiempo</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.esto.com.mx/">esto.com.mx</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.espn.com/soccer/schedule">espn schedule</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.rojadirecta.me/">rojadirecta.me</a>  <strong class="pipe">|</strong> 
+                       </li>
+                    </ul>
+
+<!--
+---------------shopping---------------------------------------
+-->
+                    <h2>lectura</h2>
+                    <ul>
+                        <li>
+                            <a href="https://lifehacker.com/">lifehacker</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.howtogeek.com/">howtogeek</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.pcworld.com/howto/">pcworld</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.pcmag.com/how-to">pcmag</a> <strong class="pipe">|</strong> 
+                            <a href="https://averagelinuxuser.com/">averagelinuxuser</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.avoiderrors.com/">avoiderrors</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.makeuseof.com/service/linux/">makeuseof linux</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.taringa.net/">taringa.net</a> <strong class="pipe">|</strong> 
+                        </li>
+                    </ul>
+		    
+<!--
+-------------------temporal---------------------------------------------
+-->
+                    <ul>
+                        <h2>temporal</h2>
+                        <li>
+                            <a href="https://pelisplushd.net/series?page=1">page 1</a> <strong class="pipe">|</strong> 
+                            <a href="https://pelisplushd.net/series?page=19">page 19</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=trhHnSqbt3g ">Tradingview desde cero</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=jh828XsDNTI">Curso Futuros</a> <strong class="pipe">|</strong> 
+                            <a href="https://duckduckgo.com/?q=como+invertir+en+etfs&t=brave&df=2018-01-01..2021-02-20&ia=web">invertir etfs</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=fgizHHd7nOo">org-mode awesome</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.google.com/search?q=best+org-mode+tutorial&oq=best+org-mode+tutorial&aqs=chrome..69i57.22791j0j4&sourceid=chrome&ie=UTF-8">best org-mode tutorial</a> <strong class="pipe">|</strong> 
+                            <a href="https://www.finviz.com/">finviz.com</a> <strong class="pipe">|</strong> 
+                            <a href=""></a> <strong class="pipe">|</strong> 
+                       </li>
+                    </ul>
+
+<!--
+-------------------education---------------------------------------------
+-->
+                    <ul>
+                        <h2>education</h2>
+                        <li>
+                            <a href="https://twocents.lifehacker.com/how-to-get-organized-to-pay-off-your-debt-1844083637">debt payoff success</a>  <strong class="pipe">|</strong>
+                            <a href="https://support.google.com/a/users/answer/9283139">gsuite data</a>  <strong class="pipe">|</strong> 
+                            <a href="https://business.tutsplus.com/tutorials/how-to-use-pivot-tables-in-google-sheets--cms-28887">use pivot tables</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.udemy.com/join/login-popup/?next=/the-complete-web-developer-course-2/learn/#overview">web developer 2</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.udemy.com/join/login-popup/?next=/the-web-developer-bootcamp/learn/#overview">web bootcamp</a>  <strong class="pipe">|</strong> 
+                            <a href="https://ichozxc.github.io/edx.org">edx.org</a>  <strong class="pipe">|</strong> 
+                            <a href="https://ichozxc.github.io/freecodecamp.com">freecodecamp.com</a>  <strong class="pipe">|</strong> 
+                            <a href="http://github.com/oshliaer/google-apps-script-awesome-list">Google Apps Script</a>  <strong class="pipe">|</strong>
+                       </li>
+                    </ul>                    
+
+                    <ul>
+                        <h2>fitness</h2>
+
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=n8-FALARtJ8">15 posturas yoga</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=PIkibAajz2w">Rhyanna Watson</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.fitnessblender.com/videos/intense-at-home-hiit-routine-no-equipment-hiit-workout-video-with-low-impact-modifications">low impact</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.self.com/gallery/cardio-exercises-at-home-workout">at home workout</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=qL1BzLMsMXU">triple plancha</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=QhuMeVnn_qU">cardio intenso</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=rCau44E1F54">burpees</a>  <strong class="pipe">|</strong> 
+                            <a href="https://ubiquinol.org/blog/11-yoga-poses-strength-and-flexibility">Strength and Flexibility</a>  <strong class="pipe">|</strong> 
+                        </li>
+                    </ul>
+                    
+            </div>
+            <!--right-->
+            <div id="right">
+                <nav id="resources">
+
+
+<!--
+---------------videos-------------------------------------------------
+-->
+                    <ul>
+                        <h2>videos</h2>
+
+                        <li>
+                            <a href="https://seriesflix.nu/">seriesflix.nu</a>  <strong class="pipe">|</strong> 
+                            <a href="https://pelisplus.me/">pelisplus.me</a>  <strong class="pipe">|</strong> 
+                            <a href="http://pelisplushd.net/">pelisplushd.net</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.ver-cine.com/">ver-cine</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.seriesnovelas.net/wp/">seriesnovelas</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.novelasmp4.com/novelas/">novelasmp4</a>  <strong class="pipe">|</strong> 
+                            <a href="https://seriesmanta.in/ver-serie">seriesmanta</a>  <strong class="pipe">|</strong> 
+                            <a href="https://cine24h.net/">cine24h.net</a>  <strong class="pipe">|</strong>
+                            <a href="http://www.peliculaschingonas.org/">peliculaschingonas</a>  <strong class="pipe">|</strong> 
+                            <a href="https://allcalidad.net/">allcalidad</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.cinehdencasa.com/">cinehdencasa</a>  <strong class="pipe">|</strong> 
+                            <a href="https://novelas360.com/">novelas360</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www1.cuevana3.video/">cuevana3</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.dixmax.io/">toroplay</a>  <strong class="pipe">|</strong> 
+                            <a href="https://pelisplus2.org/">pelisplus2</a>  <strong class="pipe">|</strong> 
+                            <a href="https://pelisplay.is/">pelisplay.is</a>  <strong class="pipe">|</strong> 
+                            <a href="https://movidy.in/">movidy.in</a>  <strong class="pipe">|</strong> 
+                            <a href="https://yespeliculas.org/principal">yespeliculas</a>  <strong class="pipe">|</strong> 
+                            <a href="https://tekilaz.co/">tekilaz.co</a>  <strong class="pipe">|</strong> 
+                            <a href="https://seriespapaya.tv/">seriespapaya.tv</a>  <strong class="pipe">|</strong> 
+                            <a href="https://pelis-play.com/">pelis-play.com</a>  <strong class="pipe">|</strong> 
+                            <a href="https://cinerama91.com/">cinerama91</a>  <strong class="pipe">|</strong> 
+                            <a href="https://series1link.com/">series1link</a>  <strong class="pipe">|</strong> 
+                            <a href="https://cliver.site/">cliver.site</a>  <strong class="pipe">|</strong> 
+                       </li>
+                    </ul>
+
+
+
+<!--
+------------referencias----------------------------------------------------
+-->
+                    <ul>
+                        <h2>referencias</h2>
+
+                        <li>
+                            <a href="https://www.spreadsheetclass.com/make-text-lowercase-in-google-sheets-with-the-lower-function/">text lowercase</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.garron.me/en/linux/bash-password-manager.html">bash pwd manager</a>  <strong class="pipe">|</strong> 
+                            <a href="https://vitux.com/generation-of-a-random-password-on-linux-shell/">random password</a>  <strong class="pipe">|</strong> 
+                            <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html#17711167">link new tab</a>  <strong class="pipe">|</strong> 
+                            <a href="https://averagelinuxuser.com/backup-and-restore-your-linux-system-with-rsync/">backup n' restore</a>  <strong class="pipe">|</strong> 
+                            <a href="http://www.saberia.com/herramientas/generador-palabras/">generador palabras</a>  <strong class="pipe">|</strong> 
+                            <a href="https://techrevelations.de/2018/07/21/improve-your-chuwi-tablet-with-a-clean-and-secure-windows-10-installation/">improve chuwi</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.amazon.com/dp/B01NCO6P93/">CHUWI Hi10 Plus</a>  <strong class="pipe">|</strong> 
+                            <a href="https://linuxhint.com/update_ubuntu_2004_command_line/">Update Ubuntu 20.04</a>  <strong class="pipe">|</strong> 
+                            <a href="https://code.luasoftware.com/tutorials/linux/lubuntu-enable-autologin/">lubuntu autologin</a>  <strong class="pipe">|</strong> 
+                            <a href="https://github.com/JonnyHaystack/i3-resurrect">i3-resurrect</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=I88UMoRpK_o">shutdown button</a>  <strong class="pipe">|</strong> 
+                            <a href="https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f">access token</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.cnet.com/products/asus-x441ba-cba6a-14-a6-9225-4-gb-ram-500-gb-hdd/">X441BA CBA6A spec</a>  <strong class="pipe">|</strong> 
+                            <a href="https://wiki.archlinux.org/index.php/User:Nasdack/Thinkorswim">archlinux Thinkorswim</a>  <strong class="pipe">|</strong> 
+                            <a href="https://sangams.com.np/how-to-restore-reinstall-grub-bootloader-in-arch-linux/">Restore GRUB</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=MZt7YiS-8wg">Bottle Caps Hack</a>  <strong class="pipe">|</strong>  
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <h2>diy | cocina</h2>
+
+                        <li>
+                            <a href="https://www.saschafitnessblog.com/es/">sascha fitness</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.pizcadesabor.com/">pizcadesabor</a>  <strong class="pipe">|</strong> 
+                            <a href="https://cocina.facilisimo.com/">cocina.facilisimo</a>  <strong class="pipe">|</strong> 
+                            <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">coffee grinder</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.seriouseats.com/">seriouseats</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.labnol.org/gadgets/make-screen-protector-for-cell-phone/13284/">screen protector</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=Rnmwllxh_Xg">Custom In-Ear</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">Custom Fit Earbuds</a>  <strong class="pipe">|</strong> 
+                            <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">diy pegboard</a>  <strong class="pipe">|</strong> 
+                            <a href="https://tiphero.com/how-to-stop-car-windows-from-fogging-up">car fogging</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=fCnse5IrYJc">paper into thirds</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=O06ku6JNhwg">Cap Container</a>  <strong class="pipe">|</strong> 
+                        </li>
+                    </ul>
+
+            </div>
+            <div id="news"> 
+<section id="links">
+          <nav id="other">
+                    <select><option selected="selected" value="">Other Links</option><option value="http://www.med.umich.edu/">Michigan Medicine Gateway</option><option value="http://www.med.umich.edu/i/">Michigan Medicine Internal</option><option value="http://www.med.umich.edu/medschool/">U-M Medical School</option><option value="http://www.umich.edu/">U-M Main Site</option><option value="http://www.med.umich.edu/i/oca/initiatives/restraints.htm">New Provider Restraint Information</option><option value="feedbackform.html">Suggestions</option><option value="http://help.medicine.umich.edu/sp">Request IT Assistance</option><option value="https://i.med.umich.edu/MCIT/CS/customer/askforhelp/Lists/Outages/Current.aspx">Current Outages</option><option value="http://www.aramarkcafe.com/layouts/canary_2010/locationhome.aspx?locationid=2020">Hospital Cafeteria Menu</option><option value="http://www.med.umich.edu/i/staff.html">Staff Resources</option><option value="http://faculty.medicine.umich.edu/">Faculty Development</option><option value="http://www.med.umich.edu/i/research.htm">Research </option><option value="http://www.med.umich.edu/i/edu.htm">Education</option><option value="https://hits.medicine.umich.edu/about-hits/get-help">HITS Customer Service </option></select></nav>
+			
+                        <noscript></noscript>
+                    </p>
+                    
+                    <nav id="other2">
+<!--
+------------inversiones----------------------------------------------------
+-->
+                    <ul>
+                        <h2>inversiones</h2>
+                        <li>
+                            <a href="https://www.marydaytrader.com/curso-trading-en-bolsa-opciones/">curso Mary Day Trader</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=7PM4rNDr4oI&list=PLM9lH2tN5ZaH4e1m0xym_8bKvjYkCH-ix&app=desktop">Options Trading for Beginners</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/playlist?list=PLvPTCJC0QP2mEqqv5OVznDJHVtyD3_GBW">from 0 to profitable trader</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/results?search_query=Estrategia+Gap+y+Continuaci%C3%B3n">Estrategia Gap y Continuacion</a>  <strong class="pipe">|</strong>
+                            <a href="https://www.youtube.com/watch?v=RJ8wXrzPmrs">HOW TO: CHARTING TIPS</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=CfAtzyXHh7Q">HOW I MADE $103K</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=c9YsAbEjfOE&list=PLEb-vddWMYMPylUNheHr3SjTbwFAwgJjN"> Yawar Inversiones</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/playlist?list=PLo-B4HIHj1t0aBqJXDFYvzgvcACi5KKCF">Wealth Insider trading</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/channel/UCWpWvzkSqKW6E63RgmQLjbg">Drawbridge Finance</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/channel/UCDxffUJzjXHgKDdPgN8Z-1w">rob trader</a>  <strong class="pipe">|</strong>
+                            <a href="https://www.youtube.com/user/PATsTrading/featured">PATsTrading</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/channel/UCJvCaDLXHvEkkQnAOT2Hp0g">1215 Day Trading</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/channel/UC7bKAQwViW_72mTor6MWbBA/videos">Kant Sleep</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=jGLdai7Qa5k">Trends&trading 1</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=8uTIcGep4T0&pbjreload=101">Trends&trading 2</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/results?search_query=scalping+options">scalping options</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/results?search_query=como+elegir+las+mejores+acciones+para+invertir+">mejores acciones</a>  <strong class="pipe">|</strong>
+                            <a href="https://www.youtube.com/results?search_query=como+usar+tos+on+demand">tos on demand</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=Hjn40uLaewQ">td tos tutorial 2020</a>  <strong class="pipe">|</strong>
+                            <a href="https://www.youtube.com/watch?v=w4wEK5lUtuY">Stocks Technical Analysis</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=K3nr8kAtfI8">Price Action</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=mSQvCB7Kjsk">Analisis Fundamental</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=G_Lyk6L5pro">1.acciones - 20</a>  <strong class="pipe">|</strong> 
+                            <a href="https://www.youtube.com/watch?v=sDpUAB6hALQ">2.acciones - 20</a>  <strong class="pipe">|</strong> 
+                        </li>                             
+                    </ul>
+			
+<!--
+------------Other Links 22----------------------------------------------------
+
+                        <ul>
+                            <h2>varios links</h2>
+
+                            <li>
+                                 <a href="https://www.superbowlsquares.org/">superbowl squares</a>  <strong class="pipe">|</strong>  
+                                 <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa</a>  <strong class="pipe">|</strong>  
+                                 <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga</a>  <strong class="pipe">|</strong>  
+                                 <a href="http://houston.eventful.com/events">houston eventful</a>  <strong class="pipe">|</strong>  
+                            </li>
+                        </ul>			
+
+
+
+                        
+
+                    <select></select></nav>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="http://www.med.umich.edu/i/staff.html" class="other">Staff Resources</a></li>
+                    <li><a href="http://faculty.medicine.umich.edu/" class="other">Faculty Development</a></li>
+                    <li><a href="http://www.med.umich.edu/i/research.htm" class="other">Research </a></li>
+                    <li><a href="http://www.med.umich.edu/i/edu.htm" class="other">Education</a></li>
+                    <li class="lastlink"><a href="https://hits.medicine.umich.edu/about-hits/get-help" class="other">HITS Customer Service </a></li>
+                </ul>
+            <select></select></nav>
+        </footer>
+    </div>
+-->
+
+
+</body></html>
