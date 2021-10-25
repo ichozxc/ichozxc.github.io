@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html data-theme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <meta name="author" content="Pratik Pingale">
+  <meta name="description" content="A minimalist, beautiful startpage forked from [Prismatic Night]">
+
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://proxzima.ml/prism/">
+  <meta property="og:description" content="A minimalist, beautiful startpage forked from [Prismatic Night](/3r3bu5x9/Prismatic-Night)">
+  <meta property="og:image" content="https://raw.githubusercontent.com/PROxZIMA/prism/master/assets/ogImage.png">
+
+  <link rel="stylesheet" type="text/css" href="index_files/style.css">
+  <link rel="icon" type="image/svg+xml" href="https://proxzima.ml/prism/icons/favicon.svg">
+</head>
+
+<body>
+  <div class="container">
+    <div id="sidePane" class="sidePane">
+      <div class="extend sideIcon"></div>
+      <div title="Edit" class="sideIcon" id="edit" tabindex="0"></div>
+      <div title="Save" class="sideIcon" id="save" tabindex="0"></div>
+      <label title="Import" class="sideIcon importWrap" tabindex="0"><input id="import" type="file" accept=".json"></label>
+      <div title="Export" class="sideIcon" id="export" tabindex="0"></div>
+      <div title="Restore" class="sideIcon" id="restore" tabindex="0"></div>
+
+      <!-- https://codepen.io/bnthor/pen/WQBNxO -->
+      <div id="toggleWrapper" class="toggleWrapper">
+        <input type="checkbox" class="theme" id="theme"><label for="theme" class="toggle">
+          <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+        </label>
+      </div>
+    </div>
+<!--      
+    <div class="head">
+      <div class="logo"><img src="index_files/fox.svg"></div>
+      <div class="searchBox">
+        <form autocomplete="off" class="search" action="https://www.google.com/search" method="get">
+          <img class="engine" id="engine" src="index_files/google.svg">
+          <div class="autocomplete">
+            <input id="inputBox" class="inputBox" type="text" name="q" placeholder="Search with Google">
+            <div id="autocomplete-items" class="autocomplete-items"></div>
+          </div>
+          <input class="button" src="index_files/search.svg" name="submit" type="image">
+        </form>
+      </div>
+    </div>
+  -->
+    <div class="bmContainer">
+      <div class="category">
+        <div class="icon code"><img src="index_files/code.svg"></div>
+        <div class="bookmarks code">
+          <a href="http://www.bankofamerica.com/online-banking/sign-in/">bofa</a>
+          <a href="https://login.1stnb.com/tob/live/usp-core/app/login/consumer">1stnb</a>
+          <a href="https://www.reliant.com/public/login/index.htm">reliant</a>
+          <a href="https://www.att.com/">att.com</a>
+          <a href="https://my.xfinity.com/">xfinity</a>
+          <a href="https://myaccount.boostmobile.com/sign-in.html">boostmobile</a>
+          <a href="http://gmail.com/">gmail</a>
+          <a href="https://keep.google.com/">google keep</a>
+          <a href="http://www.facebook.com/">facebook</a>
+          <a href="https://www.tdameritrade.com/home.page">TD Ameritrade</a>
+          <a href="https://trade.thinkorswim.com/" >thinkorswim web</a>
+          <a href="https://drive.google.com/drive/my-drive">My Drive</a>
+          <a href="https://docs.google.com/spreadsheets/d/1boZkH_hrklfSYaTMTvh5jW1r0MOsPPqjEL_Ge5mxotA/edit#gid=504902444">expense tracker</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon docs"><img src="index_files/docs.svg"></div>
+        <div class="bookmarks docs">
+          <a href="https://docs.google.com/spreadsheets/d/1jAmGyJZqT_v59_t5ndsKSH1lpo2BJRPH9HFh6Yz2Y_8/edit#gid=680333604">2021</a>
+          <a href="https://docs.google.com/document/d/1Vb4YjLWd0g7bsfomRSVcXavByldGmWU3Vxqt1a6ZbwE/edit">mis notas</a>
+          <a href="https://github.com/ichozxc/ichozxc.github.io/blob/master/index.html">ichozxc.github.io</a>
+          <a href="https://docs.google.com/spreadsheets/d/1B40h6GNh7ecSTHk9V2Y6BKrYAumResYL931kqTxIXsM/edit#gid=1206916439">quiniela</a>
+          <a href="http://instagram.com/">instagram</a>
+          <a href="https://www.mint.com">mint.com</a>
+          <a href="https://www.mail.com/#.7518-header-logo1-1">mail.com</a>
+          <a href="http://mail.yandex.com/">mail yandex</a>
+          <a href="http://reddit.com/">reddit</a>
+          <a href="http://www.columbusgasprices.com/">gas prices</a>
+          <a href="https://access.paylocity.com/?client_id=56400b1e4bab4790b909ace559dadbc1&redirect_uri=https://login.paylocity.com/Escher/Escher_WebUI/Membership.IdentityManager/Return&response_mode=form_post&response_type=code&scope=openid+profile+offline_access+security:credential:create+security:credential:update+security:credential:delete+security:companysecuritysettings:create+security:companysecuritysettings:delete&state=OpenIdConnect.AuthenticationProperties=agBcppeYDCA_ypNhShBrLBIO1ZeUedzafFxNS-VkSkPVvspKyCrNnh03iolA-LU4lv9-lie76gXrsgulwzBkm3IgmlrhPNIp5aH0LggJ5dhc6Magnlr2tuNJN1intncdixfb2uE2nAD7Ztw_tw1k7DZ4Mr0oeazFztzyyubhLYhSef_hQXaJef5RgoRXSSd5IbdSKUy4e5ZI13N28C8m8JYrYFOW45cBMthoamluEYKMZn-E8_6xcfl9MEi74sKxSl80efTXZPvU5nuySJ8_XbJ2pABg6VS_xgENHE0xFwUFHSQF">paylocity</a>
+          <a href="http://www.twitter.com/">twitter</a>
+          <a href="https://portal.cardaccesssite.com/web/rapid/login">rapid!</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.espn.com.mx/">espn.com.mx</a>
+          <a href="http://www.ligamx.net/">ligamx.net</a>
+          <a href="https://www.mediotiempo.com/">mediotiempo</a>
+          <a href="https://www.esto.com.mx/">esto.com.mx</a>
+          <a href="http://www.espn.com/soccer/schedule">espn schedule</a>
+          <a href="http://www.rojadirecta.me/">rojadirecta.me</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/user/jarcilav">Tradeknowlogy</a>
+          <a href="https://www.youtube.com/channel/UCjbEAhCd_8bEEbPbs4kJPEA">sigma option</a>  
+          <a href="https://www.marydaytrader.com/curso-trading-en-bolsa-opciones/">curso Mary</a>  
+          <a href="https://www.youtube.com/playlist?list=PLf5N6dqfQaNSDnFK64xtZ5O9tACxqrNdg" >TDA options</a>
+          <a href="https://www.youtube.com/watch?v=rDnaP-zT4us" >spreads Mobile App</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/watch?v=zCRmgAxksJ0" >Volume Scans</a>
+          <a href="https://www.youtube.com/watch?v=KaMJTaW2usA" >MOMO Scanner</a>
+          <a href="https://www.youtube.com/watch?v=ZZwroCzMG7o" >momo scanner</a>
+          <a href="https://www.youtube.com/watch?v=nPWnli8nGfY" >Options2Trade</a>
+          <a href="https://www.youtube.com/results?search_query=How+to+Quickly+Scan+The+Best+Option+Trading+Stocks" >scan stocks</a>
+          <a href="https://www.youtube.com/watch?v=zzaN91gcJOI" >b4 party starts</a>
+          <a href="https://www.youtube.com/watch?v=s2Ba94sLZN4" >B4 they explode</a>
+          <a href="https://www.youtube.com/watch?v=_0e2zJFmsgc" >TOS Scans</a>
+          <a href="http://www.juliestav.com/" >julie stav</a>
+          <a href="https://www.finviz.com/">finviz.com</a> 
+          <a href="https://www.barchart.com" >barchart.com</a>
+        </div>
+      </div>
+      
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">          
+          <a href="http://tropical100.com/index.php/salsa">tropical 100</a>
+          <a href="http://salsapalquesabe.com/">salsapalquesabe</a>
+          <a href="https://player.fastcast4u.com/catedralsalsa/#">catedral salsa</a>
+          <a href="https://www.rcast.net/dir/salsa/page2">rcast.net</a>
+          <a href="http://www.solarlatinclub.com/">solar latin club</a>
+          <a href="https://www.youtube.com/watch?v=T0t0M2CFHp0">mix salsa brava</a>
+          <a href="http://www.salsaybachata.com/">salsa y bachata</a>
+          <a href="https://www.pandora.com/station/play/2138528432333866004">la mejor salsa tx</a>
+          <a href="https://www.youtube.com/watch?v=28XnU4aOXU8">cumbias col</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/results?search_query=sexy+lingerie+show">lingerie show</a>
+          <a href="https://www.youtube.com/watch?v=xyxa1d0plOo">showroom fruit</a>
+          <a href="https://www.youtube.com/watch?v=rsiDkANxTXU">Swim Fashion</a>
+          <a href="https://www.youtube.com/watch?v=9gA2uHILDqA">Frankies Bikinis</a>
+          <a href="https://www.youtube.com/watch?v=sHc3EX67GBE">Desfile Paradizia</a>
+          <a href="https://www.youtube.com/watch?v=N2ZE-kf5p2c">Miami Swim</a>
+          <a href="https://www.youtube.com/watch?v=9WQfv66LX-c">roco desfile</a>
+          <a href="https://www.youtube.com/watch?v=_SHROPvn9yA">Fruit Passion</a>
+          <a href="https://www.youtube.com/watch?v=pXBX1_O3HR0">JASMINE 2019</a>
+          <a href="https://www.youtube.com/watch?v=t4Nat7Uy_OQ">LULI FAMA 2021</a>
+          <a href="https://www.youtube.com/watch?v=KtpTw47IBK8&t">babalu 2013</a>
+          <a href="https://www.youtube.com/watch?v=3Dxk14m9xQI">Fancy Sinner</a>
+          <a href="https://www.youtube.com/watch?v=0LBfnUxE_Mc">Models Bikini</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">          
+          <a href="https://www.bestbuy.com/">bestbuy</a>
+          <a href="https://www.microcenter.com/">microcenter</a>
+          <a href="https://www.directron.com/">directron</a>
+          <a href="https://www.youtube.com/watch?v=rvfgrTYG4wQ">Triple Monitor</a>
+          <a href="https://www.youtube.com/watch?v=LxXITciswXc">Asus X441BA</a>
+          <a href="https://fitsewing.com/best-portable-sewing-machine/">Sewing Machine</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">
+          <a href="https://lifehacker.com/">lifehacker</a>
+          <a href="https://www.howtogeek.com/">howtogeek</a>
+          <a href="https://www.pcworld.com/howto/">pcworld</a>
+          <a href="https://www.pcmag.com/how-to">pcmag</a>
+          <a href="https://averagelinuxuser.com/">averagelinuxuser</a>
+          <a href="https://www.avoiderrors.com/">avoiderrors</a>
+          <a href="https://www.makeuseof.com/service/linux/">makeuseof linux</a>
+          <a href="https://www.taringa.net/">taringa.net</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/watch?v=kN1XP-Bef7w" >HTML5 CERO</a>
+          <a href="https://www.youtube.com/watch?v=OWKXEJN67FE" >CSS CERO</a>
+          <a href="https://www.youtube.com/watch?v=z95mZVUcJ-E" >javascript cero</a>
+          <a href="https://support.google.com/a/users/answer/9283139">gsuite data</a>
+          <a href="https://business.tutsplus.com/tutorials/how-to-use-pivot-tables-in-google-sheets--cms-28887">pivot tables</a>
+          <a href="https://www.udemy.com/join/login-popup/?next=/the-complete-web-developer-course-2/learn/#overview">web developer 2</a>
+          <a href="https://www.udemy.com/join/login-popup/?next=/the-web-developer-bootcamp/learn/#overview">web bootcamp</a>
+          <a href="https://www.edx.org">edx.org</a>
+          <a href="https://www.freecodecamp.org">freecodecamp</a>
+          <a href="http://github.com/oshliaer/google-apps-script-awesome-list">gApps Script</a>          
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://lifehacker.com/reddits-beloved-no-weights-workout-is-famous-for-a-reas-1847193925" >No-Weights</a>
+          <a href="https://www.youtube.com/watch?v=n8-FALARtJ8">15 posturas yoga</a>
+          <a href="https://www.youtube.com/watch?v=fldE8Ukcvrc">Vinyasa Yoga</a>
+          <a href="https://www.youtube.com/watch?v=PIkibAajz2w">Rhyanna Watson</a>
+          <a href="https://www.fitnessblender.com/videos/intense-at-home-hiit-routine-no-equipment-hiit-workout-video-with-low-impact-modifications">low impact</a>
+          <a href="https://www.self.com/gallery/cardio-exercises-at-home-workout">home workout</a>
+          <a href="https://www.youtube.com/watch?v=qL1BzLMsMXU">triple plancha</a>
+          <a href="https://www.youtube.com/watch?v=QhuMeVnn_qU">cardio intenso</a>
+          <a href="https://www.youtube.com/watch?v=rCau44E1F54">burpees</a>
+          <a href="https://ubiquinol.org/blog/11-yoga-poses-strength-and-flexibility">11 Yoga Poses</a>          
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">          
+          <a href="https://seriesflix.nu/">seriesflix.nu</a>
+          <a href="https://pelisplus.me/">pelisplus.me</a>
+          <a href="http://pelisplushd.net/">pelisplushd.net</a>
+          <a href="http://www.ver-cine.com/">ver-cine</a>
+          <a href="http://www.seriesnovelas.net/wp/">seriesnovelas</a>
+          <a href="https://www.novelasmp4.com/novelas/">novelasmp4</a>
+          <a href="https://seriesmanta.in/ver-serie">seriesmanta</a>
+          <a href="https://cine24h.net/">cine24h.net</a>
+          <a href="https://www.dixmax.io/">toroplay</a>
+          <a href="http://www.peliculaschingonas.org/">peliculaschingonas</a>
+          <a href="https://allcalidad.net/">allcalidad</a>
+          <a href="https://www1.cuevana3.video/">cuevana3</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="http://www.cinehdencasa.com/">cinehdencasa</a>
+          <a href="https://novelas360.com/">novelas360</a>
+          <a href="https://pelisplus2.org/">pelisplus2</a>
+          <a href="https://pelisplay.is/">pelisplay.is</a>
+          <a href="https://movidy.in/">movidy.in</a>
+          <a href="https://yespeliculas.org/principal">yespeliculas</a>
+          <a href="https://tekilaz.co/">tekilaz.co</a>
+          <a href="https://seriespapaya.tv/">seriespapaya.tv</a>
+          <a href="https://pelis-play.com/">pelis-play.com</a>
+          <a href="https://cinerama91.com/">cinerama91</a>
+          <a href="https://series1link.com/">series1link</a>
+          <a href="https://cliver.site/">cliver.site</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://arcolinuxforum.com/viewforum.php?f=80" >Known issues</a>
+          <a href="https://forum.archlabslinux.com/t/how-to-include-systemlogs-in-your-post-when-trouble-shooting/4638" >systemlogs</a>
+          <a href="https://wiki.archlinux.org/title/Swap" >Swap</a>
+          <a href="https://pages.github.com" >GitHub Pages</a>
+          <a href="https://www.spreadsheetclass.com/make-text-lowercase-in-google-sheets-with-the-lower-function/">text lowercase</a>  
+          <a href="https://www.garron.me/en/linux/bash-password-manager.html">pwd manager</a>  
+          <a href="https://vitux.com/generation-of-a-random-password-on-linux-shell/">random password</a>  
+          <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html#17711167">link new tab</a>  
+          <a href="https://averagelinuxuser.com/backup-and-restore-your-linux-system-with-rsync/">backup restore</a>  
+          <a href="https://sangams.com.np/how-to-restore-reinstall-grub-bootloader-in-arch-linux/">Restore GRUB</a>  
+          <a href="http://www.saberia.com/herramientas/generador-palabras/">generador palabras</a>  
+          <a href="https://itsfoss.com/apt-command-guide/" >apt Commands</a>
+          <a href="https://www.howtogeek.com/673855/use-vimium-to-browse-with-the-keyboard-in-chrome-and-firefox/" >vimium browse</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://linuxhint.com/update_ubuntu_2004_command_line/">Update Ubuntu</a>  
+          <a href="https://code.luasoftware.com/tutorials/linux/lubuntu-enable-autologin/">autologin</a>  
+          <a href="https://www.tecmint.com/set-display-screen-resolution-in-ubuntu/" >screen resolution</a>
+          <a href="https://github.com/JonnyHaystack/i3-resurrect">i3-resurrect</a>  
+          <a href="https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f">access token</a>  
+          <a href="https://www.cnet.com/products/asus-x441ba-cba6a-14-a6-9225-4-gb-ram-500-gb-hdd/">X441BA</a>  
+          <a href="https://wiki.archlinux.org/index.php/User:Nasdack/Thinkorswim">archlinux TOS</a>  
+          <a href="https://www.reddit.com/r/archlinux/comments/juianf/is_there_a_software_that_runs_a_command_at_a_time/" >runs command</a>
+          <a href="https://archlabslinux.gitlab.io/docs/customization/nitrogen_and_feh.html" >Nitrogen Feh</a>
+          <a href="https://www.techhive.com/article/3605021/5-things-i-learned-while-setting-up-my-first-media-server.html" >media server</a>
+          <a href="https://restoreprivacy.com/google-alternatives/" >google alternatives</a>
+          <a href="https://www.youtube.com/watch?v=IhvJevHc7jE" >debian testing</a>
+          <a href="https://wiki.manjaro.org/index.php?title=ALSA" >ALSA Manjaro</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://lecorbeausvault.wordpress.com/2021/01/15/the-basics-of-noscript/">noscript</a>
+          <a href="https://www.pizcadesabor.com/">* * *</a>
+          <a href="https://cocina.facilisimo.com/">* * *</a>
+          <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">* * *</a>
+          <a href="https://www.seriouseats.com/">* * *</a>
+          <a href="https://www.labnol.org/gadgets/make-screen-protector-for-cell-phone/13284/">* * *</a>
+          <a href="https://www.youtube.com/watch?v=Rnmwllxh_Xg">* * *</a>
+          <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">* * *</a>
+          <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">* * *</a>
+          <a href="https://tiphero.com/how-to-stop-car-windows-from-fogging-up">* * *</a>
+          <a href="https://www.youtube.com/watch?v=fCnse5IrYJc">* * *</a>
+          <a href="https://www.youtube.com/watch?v=O06ku6JNhwg">* * *</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.saschafitnessblog.com/es/">sascha fitness</a>
+          <a href="https://www.pizcadesabor.com/">pizcadesabor</a>
+          <a href="https://cocina.facilisimo.com/">cocina.facilisimo</a>
+          <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">coffee grinder</a>
+          <a href="https://www.seriouseats.com/">seriouseats</a>
+          <a href="https://www.labnol.org/gadgets/make-screen-protector-for-cell-phone/13284/">screen protector</a>
+          <a href="https://www.youtube.com/watch?v=Rnmwllxh_Xg">Custom In-Ear</a>
+          <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">Custom Earbuds</a>
+          <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">diy pegboard</a>
+          <a href="https://tiphero.com/how-to-stop-car-windows-from-fogging-up">car fogging</a>
+          <a href="https://www.youtube.com/watch?v=fCnse5IrYJc">paper into thirds</a>
+          <a href="https://www.youtube.com/watch?v=O06ku6JNhwg">Cap Container</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.laptopmag.com/articles/reset-windows-10-pc" >reset win10</a>
+          <a href="https://www.windowscentral.com/tips-tricks-increase-pc-performance-windows-10" >win10 performance</a>
+          <a href="https://www.youtube.com/watch?v=I88UMoRpK_o">shutdown button</a>  
+          <a href="https://github.com/lukesampson/scoop/wiki/Quick-Start" >scoop installer</a>
+          <a href="https://techrevelations.de/2018/07/21/improve-your-chuwi-tablet-with-a-clean-and-secure-windows-10-installation/">improve chuwi</a>  
+          <a href="https://www.amazon.com/dp/B01NCO6P93/">CHUWI Hi10 Plus</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon art"><img src="index_files/art.svg"></div>
+        <div class="bookmarks art">
+          <a href="https://lifehacker.com/how-to-file-your-taxes-for-free-1846305828" >File Taxes</a>
+          <a href="https://twocents.lifehacker.com/how-to-get-organized-to-pay-off-your-debt-1844083637">debt payoff</a>
+          <a href="http://www.calcularporcentaje.es">calcular %</a>
+          <a href="https://www.superbowlsquares.org/">superbowl squares</a>
+          <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa</a>
+          <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga</a>
+          <a href="http://houston.eventful.com/events">houston eventful</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon art"><img src="index_files/art.svg"></div>
+        <div class="bookmarks art">
+          <a href="https://pelisplushd.net/series?page=1">page 1</a>
+          <a href="https://pelisplushd.net/series?page=19">page 19</a>
+          <a href="https://www.youtube.com/watch?v=trhHnSqbt3g ">Tradingview 0</a>
+          <a href="https://linuxhint.com/setup_screensaver_manjaro_linux/" >Screensaver1</a>
+          <a href="https://www.debugpoint.com/2018/08/install-change-autostart-setup-screensaver-ubuntu-linux/" >Screensaver2</a>
+          <a href="https://itsfoss.com/best-linux-graphic-design-software/">graphic software</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div id="toastsContainer" class="toastsContainer"></div>
+  </div>
+  <script src="index_files/main.js"></script>
+
+
+</body></html>
