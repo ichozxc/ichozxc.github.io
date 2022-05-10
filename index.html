@@ -1,955 +1,384 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0049)file:///home/tetx/Downloads/michiganhomepage.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <link href="./index_files/font.css" rel="stylesheet" type="text/css">
-      <!--<base target="_blank">--><base href="." target="_blank">
-    <title>michigan home page</title>
+<!DOCTYPE html>
+<html data-theme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>ichoxx</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base target="_blank">
+  <meta name="author" content="Pratik Pingale">
+  <meta name="description" content="A minimalist, beautiful startpage forked from [Prismatic Night]">
 
-<link href="./index_files/chp-main.css" rel="stylesheet" type="text/css">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:title" content="Home">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://proxzima.ml/prism/">
+  <meta property="og:description" content="A minimalist, beautiful startpage forked from [Prismatic Night](/3r3bu5x9/Prismatic-Night)">
+  <meta property="og:image" content="https://raw.githubusercontent.com/PROxZIMA/prism/master/assets/ogImage.png">
 
-
-<style type="text/css">
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-
-.button {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 1em 0 0 0;
-  font-family: 'Montserrat';
-  padding: 0.85em 1em;
-  -webkit-appearance: none;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out;
-  font-size: 0.9rem;
-  line-height: 1;
-  text-align: center;
-  cursor: pointer;
-  background-color: #1779ba;
-  color: #fefefe;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  font-size: .8rem;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
-  width: 170px;
-}
-[data-whatinput="mouse"] .button {
-  outline: 0;
-}
-.button:hover,
-.button:focus {
-  background-color: #14679e;
-  color: #fefefe;
-}
-
-.button svg {
-  left: -22px;
-  position: absolute;
-  top: -22px;
-  transition: all 0.2s ease-in-out;
-  -webkit-transform:  scale3d(.5, .5, .5);
-  transform:  scale3d(.5, .5, .5);
-}
-.button:hover,
-.button:focus {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-.button:hover svg,
-.button:focus svg {
-  -webkit-transform: rotate(5deg) scale3d(.5, .5, .5);
-  transform: rotate(5deg) scale3d(.5, .5, .5);
-}
-.button--lt-background {
-  background-color: #00274c;
-  color: #fefefe;
-  border: 1px solid #001a3f;
-}
-.button--lt-background:hover,
-.button--lt-background:focus {
-  background-color: #ffcb05;
-  color: #fefefe;
-}
-.button--lt-background svg {
-  fill: #ffcb05;
-}
-.button--lt-background:hover,
-.button--lt-background:focus {
-  background-color: #ffcb05;
-  color: #0a0a0a;
-  border: 1px solid #ebbc01;
-}
-.button--lt-background:hover:hover,
-.button--lt-background:hover:focus,
-.button--lt-background:focus:hover,
-.button--lt-background:focus:focus {
-  background-color: #ffcb05;
-  color: #0a0a0a;
-}
-.button--lt-background:hover svg,
-.button--lt-background:focus svg {
-  fill: #00274c;
-}
-
-</style>
-
-
-
-
-  <!--[if lt IE 9]>
-    	<script src="js/html5.js"></script>
-
-
-    <![endif]-->
-
-
-    <!--[if IE 8]> 
-		<link href="css/chp-ie.css" rel="stylesheet" type="text/css" />
-	<![endif]-->
-	<!--[if IE 7]> 
-		<link href="css/chp-ie-7.css" rel="stylesheet" type="text/css" />
-	<![endif]
-    
-    
-
-
-  <script type="text/javascript" async="" src="./michiganhomepage_files/ga.js"></script><script>
-    function ping(){
-		if (location.protocol == 'https:') {
-			var testUrl= 'https://www.med.umich.edu/i/index.html'
-		}else {
-			var testUrl= 'http://www.med.umich.edu/i/index.html'
-			}
-       $.ajax({
-          url: testUrl,
-          success: function(result){
-			  document.getElementById('searchbox').action='https://search.med.umich.edu/search'; 
-          },     
-          error: function(result){
-			  document.getElementById('searchbox').action='https://www.med.umich.edu/umhs/search/search_results.html?q=';
-             
-          }
-       });
-  }
-   
-</script> <script src="./michiganhomepage_files/jquery.min.js"></script>
-
- 
-    
-   
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('a').click(function() {
-            var eventCategory = $(this).attr('title');
-            var trackURL = $(this).attr('href');
-            var text = $(this).text();
-            trackClick(text, trackURL, eventCategory);
-        });
-    });
-    </script>
-    <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-6347926-3']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-
-    function trackClick(text, link, title) {
-        _gaq.push(['_trackEvent', text, link, title]);
-    };
-    </script>
-    <!-- End of External link tracking -->
-    <!-- BEGIN GOOGLE ANALYTICS CODE -->
-    <!-- begin code for tracking outgoing links and downloads 
-    <script src="./michiganhomepage_files/gatag.js" type="text/javascript">
-    </script>        -->
-    <!-- end code for tracking outgoing links and downloads -->
-    <!-- begin main tracking code 
-    <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script><script src="./michiganhomepage_files/ga.js" type="text/javascript"></script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-6347926-3");
-        pageTracker._trackPageview();
-    } catch (err) {}
-    </script>
-    <!-- end main tracking code -->
-    <!-- END GOOGLE ANALYTICS CODE -->
-<!--    <script>
-    // DOM ready
-    $(function() {
-
-        // Create the dropdown base
-        $("<select />").appendTo("nav");
-
-        // Create default option "Go to..."
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Top Site Navigation"
-        }).appendTo("nav#pri-nav select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Go To Systems"
-        }).appendTo("nav#quick-systems select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Pathology"
-        }).appendTo("nav#pathology select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Radiology"
-        }).appendTo("nav#radiology select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Pharmacy Services"
-        }).appendTo("nav#pharmacy select");
-
-
-
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Nursing"
-        }).appendTo("nav#nursing select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Safety and Professionalism"
-        }).appendTo("nav#safety select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Direcotory Services"
-        }).appendTo("nav#direcotory select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Bed Status"
-        }).appendTo("nav#bed select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Clinical Resources"
-        }).appendTo("nav#resources select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Clinical References"
-        }).appendTo("nav#references select");
-
-        $("<option />", {
-            "selected": "selected",
-            "value": "",
-            "text": "Other Links"
-        }).appendTo("nav#other select");
-
-        // Populate dropdown with menu items
-        $("nav a.line-tab").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#pri-nav select");
-        });
-
-        $("nav a.quick-systems").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#quick-systems select");
-        });
-
-        $("nav a.pathology").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#pathology select");
-        });
-        $("nav a.radiology").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#radiology select");
-        });
-        $("nav a.pharmacy").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#pharmacy select");
-        });
-
-
-
-
-        $("nav a.nursing").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#nursing select");
-        });
-
-        $("nav a.safety").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#safety select");
-        });
-
-        $("nav a.directory").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#directory select");
-        });
-
-        $("nav a.bed").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#bed select");
-        });
-
-        $("nav a.resources").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#resources select");
-        });
-
-        $("nav a.references").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#references select");
-        });
-
-        $("nav a.other").each(function() {
-            var el = $(this);
-            $("<option />", {
-                "value": el.attr("href"),
-                "text": el.text()
-            }).appendTo("nav#other select");
-        });
-
-        // To make dropdown actually work
-        // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-        $("nav select").change(function() {
-            window.location = $(this).find("option:selected").val();
-        });
-
-    });
-    </script>
-    <script>
-    $(window).bind("pageshow", function(event) {
-        if (event.originalEvent.persisted) {
-            window.location.reload()
-        }
-    });
-    </script>    -->
+  <link rel="stylesheet" type="text/css" href="index_files/style.css">
+  <link rel="icon" type="image/svg+xml" href="https://proxzima.ml/prism/icons/favicon.svg">
 </head>
-<!--
-<body id="home" onunload="">
-    <header class="back">
-        <div class="wrap">
-            <div id="top">
-                <nav id="top-nav">
-                    <ul>
-                        <li><a href="http://www.med.umich.edu/" class="other">Michigan Medicine Gateway</a></li>
-                        <li><a href="http://www.med.umich.edu/i/" class="other">Michigan Medicine Internal</a></li>
-                        <li> <a href="http://www.med.umich.edu/medschool/" class="other">U-M Medical School</a></li>
-                        <li class="lastlink"><a href="http://www.umich.edu/" class="other">U-M Main Site</a></li>
-                    </ul>
-                <select></select></nav>
-            </div>
-            <div id="logo_area2">
-                        <a href="https://www.med.umich.edu/clinical/index.html#"><img src="./michiganhomepage_files/chplogo.png" alt=""></a>
-            </div>
-            <div id="right-side-header">
-                <nav id="quick-systems">
-                    <ul>
-                        <li id="michart"><a href="http://vplaces.med.umich.edu/" class="quick-systems">MiChart</a></li>
-                        <li id="levelone"><a href="https://vpn.med.umich.edu/level1" class="quick-systems">Level One</a></li>
-                        <li id="outlook"><a href="https://outlook.office.com/">Outlook</a></li>
-                        <li id="va" class="lastlink"><a href="https://citrixaccess.va.gov/" class="quick-systems">VA</a></li>
-                    </ul>
-                <select><option selected="selected" value="">Go To Systems</option><option value="http://vplaces.med.umich.edu/">MiChart</option><option value="https://vpn.med.umich.edu/level1">Level One</option><option value="https://citrixaccess.va.gov/">VA</option></select></nav>
-                <div id="search">
-                    <form method="get" id="searchbox" action="https://www.med.umich.edu/umhs/search/search_results.html?q=">
-                        <input type="text" name="q" id="search-box" onfocus="if (this.value == &#39;- Search UMHS -&#39;) this.value = &#39;&#39;;" onblur="if (this.value == &#39;&#39;) this.value = &#39;- Search UMHS -&#39;;" value="- Search UMHS -" size="16" maxlength="2047">
-                        <input name="btnG" type="image" class="searchbox_submit" id="Search" value="Search" src="./michiganhomepage_files/search_submit.gif" align="bottom">
-                        <input type="hidden" name="cx" value="005900516636647546156:hq59hoykncw">
-                        <input type="hidden" name="cof" value="FORID:11">
-                        <input type="hidden" name="site" value="default_collection">
-                        <input type="hidden" name="client" value="umhs">
-                        <input type="hidden" name="proxystylesheet" value="umhs">
-                        <input type="hidden" name="oe" value="utf8">
-                        <input type="hidden" name="ie" value="utf8">
-                        <br>
-                        
-                    </form>
-                    <script type="text/javascript">
-                    ping('search');
-                    </script>
-                </div>
-            </div>
-           
-            <nav id="pri-nav" class="pri-nav">
-                <ul>
-                    <li class="pri-tab"><a href="https://www.med.umich.edu/clinical/index.html" class="active line-tab first"><span>Clinical Home Page</span></a></li>
-                    <li class="pri-tab"><a href="https://www.med.umich.edu/clinical/references.htm" class="line-tab"><span>Clinical References</span></a></li>
-                    <li class="pri-tab"><a href="https://www.med.umich.edu/clinical/clinicalresources.htm" class="line-tab"><span>Clinical Resources</span></a></li>
-                    <li class="pri-tab  last"><a href="https://www.med.umich.edu/clinical/connect.htm" class="line-tab last"><span>Clinical Systems Connection Page</span></a></li>
-                </ul>
-            <select><option selected="selected" value="">Top Site Navigation</option><option value="index.html">Clinical Home Page</option><option value="references.htm">Clinical References</option><option value="clinicalresources.htm">Clinical Resources</option><option value="connect.htm">Clinical Systems Connection Page</option></select></nav>
-           
-        </div>     -->
-    
-    <body><div class="wrap">
-        <div id="breaking-news">
-	<!--		<ul id="headlinesfeed-em">
-                Add <li> here for a red warning text 
-				
-			
-			</ul>
-            <script src="http://feeds.feedburner.com/UmhsHeadlinesEmergencyChp?format=sigpro" type="text/javascript" ></script>
-            <script src="./michiganhomepage_files/U-mEmergencyAlert" type="text/javascript"></script>
-          <script src="./michiganhomepage_files/UmhsPrmcChp" type="text/javascript"></script>
-          <noscript> </noscript>     -->
-                
-                
-        </div>
-        <div id="content">
-            <div id="left">
-<!-- 
-                            <a href="" ></a> <strong class="pipe">|</strong>
 
-               <nav id="pathology">     -->
-                    <ul>
-                        <h2>principal</h2>
+<body>
+  <div class="container">
+    <div id="sidePane" class="sidePane">
+      <div class="extend sideIcon"></div>
+      <div title="Edit" class="sideIcon" id="edit" tabindex="0"></div>
+      <div title="Save" class="sideIcon" id="save" tabindex="0"></div>
+      <label title="Import" class="sideIcon importWrap" tabindex="0"><input id="import" type="file" accept=".json"></label>
+      <div title="Export" class="sideIcon" id="export" tabindex="0"></div>
+      <div title="Restore" class="sideIcon" id="restore" tabindex="0"></div>
 
-                            <a href="https://docs.google.com/spreadsheets/d/1jAmGyJZqT_v59_t5ndsKSH1lpo2BJRPH9HFh6Yz2Y_8/edit#gid=680333604">2022</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.bankofamerica.com/online-banking/sign-in/">bofa</a> <strong class="pipe">|</strong> 
-                            <a href="https://login.1stnb.com/tob/live/usp-core/app/login/consumer">1stnb</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.reliant.com/public/login/index.htm">reliant</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.att.com/">att.com</a> <strong class="pipe">|</strong> 
-                            <a href="https://my.xfinity.com/">xfinity</a> <strong class="pipe">|</strong> 
-                            <a href="https://myaccount.boostmobile.com/sign-in.html">boostmobile</a> <strong class="pipe">|</strong> 
-                            <a href="http://gmail.com/">gmail</a> <strong class="pipe">|</strong>
-                            <a href="https://keep.google.com/">google keep</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.mint.com/">mint.com</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.mail.com/#.7518-header-logo1-1">mail.com</a>  <strong class="pipe">|</strong>   
-                            <a href="http://mail.yandex.com/">mail yandex</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.facebook.com/">facebook</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.tdameritrade.com/home.page">TD Ameritrade</a>  <strong class="pipe">|</strong>  
-                            <a href="https://trade.thinkorswim.com/">thinkorswim web</a> <strong class="pipe">|</strong>
-                            <a href="https://www.gemini.com/">gemini.com</a> <strong class="pipe">|</strong>
-                            <a href="https://drive.google.com/drive/my-drive">My Drive</a>  <strong class="pipe">|</strong>  
-                            <a href="https://docs.google.com/spreadsheets/d/1boZkH_hrklfSYaTMTvh5jW1r0MOsPPqjEL_Ge5mxotA/edit#gid=504902444">my expense tracker</a>  <strong class="pipe">|</strong>  
-                            <a href="https://docs.google.com/spreadsheets/d/1KA1EiIsHQO9wdgMmHyqVtNkYF94YvP3prWQDkvT_iRw/edit?usp=sharing">secuencia portafolio</a> <strong class="pipe">|</strong>
-                            <a href="https://docs.google.com/spreadsheets/d/1eqVMroEr9CUuYggyrFx3jYroxv1XI5PD-Icj6qkJ7sU/edit?usp=sharing">plan 2022 empresas</a> <strong class="pipe">|</strong>
-                            <a href="https://docs.google.com/document/d/1Vb4YjLWd0g7bsfomRSVcXavByldGmWU3Vxqt1a6ZbwE/edit">mis notas</a>  <strong class="pipe">|</strong>  
-                            <a href="https://github.com/ichozxc/ichozxc.github.io/blob/master/index.html">ichozxc.github.io</a>  <strong class="pipe">|</strong>  
-                            <a href="https://docs.google.com/spreadsheets/d/1B40h6GNh7ecSTHk9V2Y6BKrYAumResYL931kqTxIXsM/edit#gid=1206916439">quiniela</a>  <strong class="pipe">|</strong>  
-                            <a href="http://instagram.com/">instagram</a>   <strong class="pipe">|</strong>  
-                            <a href="http://reddit.com/">reddit</a>  <strong class="pipe">|</strong>  
-                            <a href="http://discord.com/login">discord QR</a> <strong class="pipe">|</strong>
-                            <a href="https://webk.telegram.org/">telegram web</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.twitter.com/">twitter</a>  <strong class="pipe">|</strong>  
-                            <a href="https://web.whatsapp.com/">whatsapp web</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.columbusgasprices.com/">gas prices</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.freetaxusa.com/">freetaxusa</a>  <strong class="pipe">|</strong> 
-                            
-                            
-                    </ul>
-
-
-<!--                         <select><option selected="selected" value="">Pathology</option><option value="http://www.pathology.med.umich.edu/">Pathology</option><option value="https://www.pathology.med.umich.edu/covid-19-resources">Pathology Covid-19 Resources </option><option value="https://labportal.med.umich.edu/portal/apps/antibiogram/">Antibiotic Susceptibility Report</option><option value="http://www.pathology.med.umich.edu/bloodbank/manual/">Blood Bank &amp; Transfusion</option><option value="https://www.pathology.med.umich.edu/static/apps/cms/ckfinder/userfiles/238/files/MassiveTransfusionProtocol.pdf">Massive Transfusion</option><option value="http://www.pathology.med.umich.edu/handbook/">Lab Handbook</option></select></nav>     
-
-                            <a href="" ></a> <strong class="pipe">|</strong>
-
-<!--                         <nav id="radiology">     -->
-                    <ul>
-                        <h2>entretenimiento</h2>
-                        
-                            <a href="https://tropical100.com.do/index.php/tropical-100-salsa">tropical 100</a>  <strong class="pipe">|</strong>  
-                            <a href="http://salsapalquesabe.com/">salsapalquesabe</a>  <strong class="pipe">|</strong> 
-                            <a href="https://player.fastcast4u.com/catedralsalsa/#">catedral de la salsa</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.rcast.net/dir/salsa/page2">rcast.net</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.solarlatinclub.com/">solar latin club</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=T0t0M2CFHp0">mix salsa brava</a>  <strong class="pipe">|</strong>  
-                            <a href="http://www.salsaybachata.com/">salsa y bachata</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=28XnU4aOXU8">cumbias colombianas</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=SDxy_CEhCts">musica de lujo</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=bVR5TGuYeqA">Best Blues Music</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/results?search_query=sexy+lingerie+show">sexy lingerie show</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=9dblgPmgwU8">neena swim</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=xyxa1d0plOo">showroom fruit</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=rsiDkANxTXU">Swim Fashion</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=9gA2uHILDqA">Frankies Bikinis</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=sHc3EX67GBE">Desfile Paradizia</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=N2ZE-kf5p2c">Miami Swim</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=9WQfv66LX-c">roco desfile cafe</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=_SHROPvn9yA">Fruit de la Passion</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=pXBX1_O3HR0">jasmine 2019</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=t4Nat7Uy_OQ">luli fama 2021</a>  <strong class="pipe">|</strong>  
-                            <a href="https://www.youtube.com/watch?v=KtpTw47IBK8&amp;t">babalu 2013 </a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.youtube.com/watch?v=3Dxk14m9xQI">Fancy Sinner</a>  <strong class="pipe">|</strong>                              
-                            <a href="https://www.youtube.com/watch?v=0LBfnUxE_Mc">Models Bikini</a> <strong class="pipe">|</strong>
-
-                    </ul>
-                    
-                    
-<!--                <select><option selected="selected" value="">Radiology</option><option value="https://medicine.umich.edu/dept/radiology">Radiology</option><option value="https://iteams.med.umich.edu/umhhc/radiology/directory/Pages/spc/ReachRad.aspx">24/7 Reach a Radiologist</option><option value="http://www.uofmhealth.org/medical-services/radiology-and-imaging/patient-resources/patient-instructions">Patient Preps</option><option value="http://www.med.umich.edu/radiology/steroid-prep.pdf">Steroid Preps</option><option value="https://acsearch.acr.org/list">Study Usage Guide</option><option value="https://umich.qualtrics.com/jfe/form/SV_brUNOpe5MzAkmnr">Procedure Guide</option></select></nav>
-
-                            <a href="" ></a> <strong class="pipe">|</strong>
-
-                <nav id="pharmacy">     -->
-                
-                
-                    <ul>
-                        <h2>shopping</h2>
-                        
-                            <a href="https://www.bestbuy.com/">bestbuy</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.microcenter.com/">microcenter</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.youtube.com/watch?v=rvfgrTYG4wQ">Triple Monitor</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.youtube.com/watch?v=LxXITciswXc">Asus X441BA</a>  <strong class="pipe">|</strong> 
-                            <a href="https://fitsewing.com/best-portable-sewing-machine/">Sewing Machine</a>  <strong class="pipe">|</strong> 
-
-                    </ul>
-                    
-<!--                                                               <a href="" ></a> <strong class="pipe">|</strong>
-
-                <select><option selected="selected" value="">Pharmacy Services</option><option value="https://pharmwebsp.med.umich.edu">Pharmacy</option><option value="https://pharmwebsp.med.umich.edu/DIS/SitePages/Formularies.aspx">Inpatient Resources</option><option value="http://www.formweb.com/umich/">Formulary</option><option value="https://pharmwebsp.med.umich.edu/DIS/SitePages/Ambulatory%20Pharmacy%20Resources.aspx">Ambulatory Resources</option><option value="https://pharmwebsp.med.umich.edu/ShortagesAndRecalls/DrugShortagesList.pdf">Shortages</option><option value="https://pharmwebsp.med.umich.edu/ShortagesAndRecalls/DrugRecallsList.pdf">Recalls</option><option value="https://pharmwebsp.med.umich.edu/SitePages/Medication%20Use%20GuideLines.aspx">Medication/Treatment Guidelines</option><option value="http://cancer.med.umich.edu/ChemoTracker/CC%20Order%20Forms/Forms/CC%20Order%20Forms%20Public.aspx">Chemotherapy Forms</option><option value="http://cancer.med.umich.edu/ChemoTracker/NonHemOnc%20Orders/Forms/AllItems.aspx">Ambulatory Infusion Forms</option><option value="https://hr.umich.edu/u-m-prescription-drug-plan-prior-authorization-request-forms">UM Drug Plan Prior Authorization Forms</option><option value="http://www.michigan.gov/lara/0,4601,7-154-72600_72603_55478---,00.html">MAPS Info</option><option value="https://michigan.pmpaware.net/login">Sign On</option><option value="https://www.halesmeds.com/">Hale's Medications &amp; Mother's Milk</option><option value="https://online.lexi.com/lco/action/home">LEXICOMP </option><option value="https://www.micromedexsolutions.com/micromedex2/librarian/">Poisindex </option></select></nav>
-                
-                                            <a href="" ></a> <strong class="pipe">|</strong>
-
-                <nav id="nursing">     -->
-                
-                
-                
-                    <ul>
-                        <h2>varios links</h2>
-                        
-                            <a href="https://lifehacker.com/how-to-file-your-taxes-for-free-1846305828">File Taxes</a> <strong class="pipe">|</strong>
-                            <a href="https://twocents.lifehacker.com/how-to-get-organized-to-pay-off-your-debt-1844083637">debt payoff</a> <strong class="pipe">|</strong>
-                            <a href="http://www.calcularporcentaje.es/">calcular %</a> <strong class="pipe">|</strong>
-                            <a href="https://www.superbowlsquares.org/">superbowl squares</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa</a> <strong class="pipe">|</strong>
-                            <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga</a> <strong class="pipe">|</strong>
-                            <a href="http://houston.eventful.com/events">houston eventful</a> <strong class="pipe">|</strong>
-
-                    </ul>
-
-<!--
-                <select><option selected="selected" value="">Nursing</option><option value="https://umhealth.sharepoint.com/sites/Nursing">Nursing</option><option value="https://umhealth.sharepoint.com/sites/Nursing/SitePages/A-Z-Resources-&amp;-Policies.aspx">Policies/Guidelines</option><option value="http://mns.elsevierperformancemanager.com/NursingSkills/Home.aspx?VirtualName=umichigan-miannarbor">Elsevier Clinical Skills</option><option value="https://umhealth.sharepoint.com/:b:/s/Nursing/EYSkcKB1yntIvhZHyO8-YX8Burevq2F-hr4uWWjbAXu4gw?e=pveAgv">Home/VPN Login</option><option value="https://umhealth.sharepoint.com/sites/Nursing/SitePages/Nursing-Units-Areas.aspx">Clinical Units/Areas</option><option value="http://www.med.umich.edu/i/nursing-PDE/">Professional Development</option><option value="http://www.med.umich.edu/i/nursing-wound_ostomy/index.html">Wound &amp; Ostomy</option><option value="https://michmed.service-now.com/kb?id=kb_article_view&amp;sysparm_article=KB0017019">Clinical Practice Guidelines/Care Plans</option><option value="https://umhealth.sharepoint.com/sites/Nursing/SitePages/Nursing-Governance.aspx">Nursing Governance</option></select></nav>     -->
-            </div>
-            <!--center-->
-
-
-            <div id="center">
-<!-- 
-                            <a href="" ></a> <strong class="pipe">|</strong>
-               <nav id="safety">     -->
-                    <ul>
-                        <h2>deportes</h2>
-                        
-                            <a href="https://www.espn.com.mx/">espn.com.mx</a>  <strong class="pipe">|</strong> 
-                            <a href="http://www.ligamx.net/">ligamx.net</a>  <strong class="pipe">|</strong> 
-                            <a href="http://www.ligafemenil.mx/">ligafemenil.mx</a>
-                            <a href="https://www.mediotiempo.com/">mediotiempo</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.esto.com.mx/">esto.com.mx</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.espn.com.mx/futbol/resultados">espn resultados</a> <strong class="pipe">|</strong>
-                            <a href="https://www.espn.com.mx/futbol/calendario">espn calendario</a> <strong class="pipe">|</strong>
-                            <a href="http://www.rojadirecta.me/">rojadirecta.me</a>           <strong class="pipe">|</strong>
-                            <a href="https://www.telelatinohd.com/tv-deportes.html">telelatinohd</a> <strong class="pipe">|</strong>
-                            <a href="https://sports.caliente.mx/es_MX/calendario">caliente.mx</a> <strong class="pipe">|</strong>
-						
-                    </ul>
-
-<!--                
-                <select><option selected="selected" value="">Safety and Professionalism</option><option value="http://www.med.umich.edu/i/oca">Office of Clinical Affairs</option><option value="http://www.med.umich.edu/i/physicianassistant/">PA Services</option><option value="https://patientsafetyform.med.umich.edu/RL6_Prod/submission.aspx?form=QS_RISK_SUBMIT&amp;icon=1000014">Professional Conduct Reporting</option><option value="http://www.med.umich.edu/i/security/behavior.htm">Help w/ Aggressive Behavior</option><option value="https://compass.med.umich.edu/">COMPASS Peer Support Network</option><option value="https://sexualmisconduct.umich.edu/reporting-process/">Report Discrimination or Harassment</option><option value="http://www.med.umich.edu/i/Safety/index.shtml">Safety Management Services</option><option value="http://www.med.umich.edu/i/eop/index.html">Emergency Operations Plan</option><option value="http://www.med.umich.edu/i/riskmgmt/PatientSafetyReporting/">Patient Safety Report Form (Event)</option><option value="https://trainingportal.med.umich.edu">MLearning/Mandatories </option><option value="https://michmed-clinical.policystat.com/home/">Find a policy: Michigan Medicine</option><option value="http://cw.i.medicine.umich.edu/policies">Find a policy: Mott</option><option value="http://hr.umich.edu/mhealthy/programs/occupational/ohs/index.html">Occupational Health Service</option><option value="https://hr.umich.edu/benefits-wellness/health/mhealthy/mental-emotional-well-being/umhs-employee-assistance-program-eap">Employee Assistance Program</option><option value="http://www.med.umich.edu/u/compliance/index.htm">Compliance Office</option><option value="https://quality.i.medicine.umich.edu/home">Quality Department (internal)</option><option value="https://www.uofmhealth.org/quality-safety">Quality &amp; Safety Performance</option></select></nav>
-                
-                
-                <nav id="directory">     
-					
-                    <h2>Directories</h2>
-                    
-<!--                    <form method="post" action="https://uhmspaging.med.umich.edu/homePaging/PagingSend/search.aspx" id="form1">
-                        <div class="aspNetHidden">
-                            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjg3NjUwODI0D2QWAmYPZBYCAgMPZBYCAgEPZBYKAgkPDxYCHgRUZXh0ZWRkAgsPD2QWAh4Jb25rZXlkb3duBRdyZXR1cm4gcmV0dXJuUHJlc3NlZCgpO2QCEQ8QDxYGHg1EYXRhVGV4dEZpZWxkBQROYW1lHg5EYXRhVmFsdWVGaWVsZAUGRGVwdElEHgtfIURhdGFCb3VuZGdkEBXrAQNBQ0UWQUNTIEFOQ0lMTEFSWSBTRVJWSUNFUyxBQ1VURSBDQVJFIFNVUkdFUlkgU0VSVklDRSAoU0ExLCBTQTIsIFRCSUNVKQ1BQ1VURSBNSSBURUFNEkFDVVRFIFBBSU4gU0VSVklDRRpBRE1JTklTVFJBVE9SIE9OLUNBTEwtIEFPQyNBRE1JU1NJT04gJiBCRUQgQ09PUkRJTkFUSU9OIENFTlRFUh5BRFVMVCBNRURJQ0FMIE9CU0VSVkFUSU9OIFVOSVQnQUxMRVJHWS9JTU1VTk9MT0dZIChBZHVsdCAmIFBlZGlhdHJpY3MpHEFORVNUSEVTSUEgQUlSV0FZIE1BTkFHRU1FTlQOQU5FU1RIRVNJT0xPR1khQU5TIFNWQyBCUklBUldPT0QgRkFNSUxZIE1FRElDSU5FI0FOUyBTVkMgQlJJQVJXT09EIEhFQUxUSCBBU1NPQ0lBVEVTIEFOUyBTVkMgQlJJQVJXT09EIE1FRElDQUwgIEdST1VQHkFOUyBTVkMgQlJJR0hUT04gSEVBTFRIIENFTlRFUhxBTlMgU1ZDIENBTlRPTiBIRUFMVEggQ0VOVEVSH0FOUyBTVkMgQ0hFTFNFQSBGQU1JTFkgTUVESUNJTkUhQU5TIFNWQyBDSEVMU0VBIElOVEVSTkFMIE1FRElDSU5FHEFOUyBTVkMgQ09STkVSIEhFQUxUSCBDRU5URVIeQU5TIFNWQyBERVhURVIgRkFNSUxZIE1FRElDSU5FM0FOUyBTVkMgRUFTVCBBTk4gQVJCT1IgTUVELVBFRFMtU2VlIEFucyBTdmMgR2VuIE1lZB1BTlMgU1ZDIEVBU1QgQU5OIEFSQk9SIE9CL0dZTiFBTlMgU1ZDIEVBU1QgQU5OIEFSQk9SIFBFRElBVFJJQ1MyQU5TIFNWQyBFQVNUIElOVEVSTkFMIE1FRElDSU5FLVNlZSBBbnMgU3ZjIEdlbiBNZWQmQU5TIFNWQyBGQU1JTFkgTUVESUNJTkUgQCBET01JTk9TIEZBUk0YQU5TIFNWQyBHRU5FUkFMIE1FRElDSU5FGkFOUyBTVkMgR0VORVJBTCBQRURJQVRSSUNTJ0FOUyBTVkMgSE9XRUxMIFBFRElBVFJJQ1MgJiBURUVOIENMSU5JQyBBTlMgU1ZDIE5PUlRIVklMTEUgSEVBTFRIIENFTlRFUg5BTlMgU1ZDIE9CL0dZThxBTlMgU1ZDIFNBTElORSBIRUFMVEggQ0VOVEVSIEFOUyBTVkMgVEFVQk1BTiBHRU5FUkFMIE1FRElDSU5FJEFOUyBTVkMgV0VTVCBBTk4gQVJCT1IgSEVBTFRIIENFTlRFUiFBTlMgU1ZDIFlQU0lMQU5USSBGQU1JTFkgTUVESUNJTkUcQU5TIFNWQyBZUFNJTEFOVEkgUEVESUFUUklDUwpBT0QgLSBNT1RUFUNBUkRJQUMgU1VSR0VSWS1BRFVMVB1DQVJESU9MT0dZIENBVEggIElOVEVSVkVOVElPThlDQVJESU9MT0dZIENQVSBTVVBFUlZJU09SHUNBUkRJT0xPR1kgRUNIT0NBUkRJT0dSQU0gVEVFIENBUkRJT0xPR1kgRUxFQ1RST1BIWVNJT0xPR1kgRVBTEUNBUkRJT0xPR1kgRkVMTE9XI0NBUkRJT0xPR1kgSEVBUlQgRkFJTFVSRSAvSEVBUlQgVFhQHENBUkRJT0xPR1kgSU5QQVRJRU5UIFNFUlZJQ0UeQ0FSRElPTE9HWS0gSEZUIElOUEFUSUVOVCBURUFNFUNBUkRJT1ZBU0NVTEFSIENFTlRFUg9DQVJFIE1BTkFHRU1FTlQIQ0FSUklFQVMgQ0NNVSBDUklUSUNBTCBDQVJFIE1FRElDSU5FIFVOSVQgQ0NVIC8gQ0FSRElBQyBDUklUSUNBTCBDQVJFIFVOSVQIQ0hBUExBSU4cQ0hJRUYgTUVESUNBTCBSRVNJREVOVCAoQ01SKRNDSElMRCAmIEZBTUlMWSBMSUZFFUNISUxEIFBST1RFQ1RJT04gVEVBTRBDTElOSUNBTCBBRkZBSVJTC0NOUyBOVVJTSU5HMENWSUNVLyBDQVJESU9WQVNDVUxBUiBDRU5URVIgSU5URU5TSVZFIENBUkUgVU5JVAlERU5USVNUUlkLREVSTUFUT0xPR1kORElFTkVSL1ZJRVdJTkcQRElGRklDVUxUIEFJUldBWRJESVNDSEFSR0UgUExBTk5JTkcbRElTT1JERVIgT0YgU0VYIERFVkVMT1BNRU5UBEVDTU8PRUNQIEFUVEVORElORydTEkVNRVJHRU5DWSBNRURJQ0lORRtFTkRPQ1JJTk9MT0dZICAmIE1FVEFCT0xJU00JRU5ET1NDT1BZG0VUSElDUyBDT05TVUxUQVRJT04gLyBBRFVMVBlFVEhJQ1MgQ09OU1VMVEFUSU9OLyBQRURTGUZBQ0UgTUFYSUxMT0ZBQ0lBTCBUUkFVTUEPRkFNSUxZIE1FRElDSU5FGEdBU1RST0VOVEVST0xPR1kgLyBMSVZFUhlHRU5FUkFMIE1FRElDSU5FIENPTlNVTFRTFkdFTkVSQUwgTUVESUNJTkUgV0FSRFMaR0VORVRJQ1MvIEFEVUxUICYgQ0FOQ0VSIC8KR0VSSUFUUklDUzVHWU5FQ09MT0dJQyBPTkNPTE9HWS1TRUUgT0JTVEVSSUNTL0dZTkVDT0xPR1kgT04tQ0FMTAxIQU5EIFNVUkdFUlkVSEVNQVRPTE9HWSAvIE9OQ09MT0dZEkhGVC1JTlBBVElFTlQgVEVBTRJIT01FIENBUkUgU0VSVklDRVMWSE9TUElUQUwgQURNSU5JU1RSQVRPUg5IT1VTRSBNQU5BR0VSUw1IWVBFUkdMWUNFTUlBEUlORkVDVElPTiBDT05UUk9MEklORkVDVElPVVMgRElTRUFTRQZJUkJNRUQPTUFTU0FHRSBUSEVSQVBZFU1DSVQgRElSRUNUT1IgT04tQ0FMTBJNQ0lULUlTTy1FSEktIElETVQYTUNJVC1JU08tU1lTLVBFUkZPUk1BTkNFEE1DSVQtU0QtQU5BTFlTSVMQTUVESUNBTCBFWEFNSU5FUh5NRURJQ0lORSAtOEQtSU5URVJNRURJQVRFIENBUkUiTUVESUNJTkUgRkFDVUxUWSBIT1NQSVRBTElTVCAoTUZIKRFNRURJQ0lORSBORVdCVVJHSC9NSUNISUdBTiBWSVNJVElORyBOVVJTRVMvTUlDSElHQU4gVklTSVRJTkcgQ0FSRRBNUFUgRVJDUCBPTiBDQUxMEU1QVSBOVVJTRSBNQU5BR0VSEU1QVSBPTiBDQUxMIE5VUlNFG01QVSBTQVRVUkRBWSBDTElOSUMgT04gQ0FMTAZNVFJJUFAhTkVQSFJPTE9HWSAvIFJFTkFMIC8gSEVNT0RJQUxZU0lTHE5FVVJPTE9HWSAoR2VuZXJhbCAvIFN0cm9rZSkNTkVVUk9MT0dZIEVFRw1ORVVST0xPR1kgSU9NDE5FVVJPU1VSR0VSWRFORVVST1NVUkdJQ0FMIElDVRZOU0cgTEVBREVSU0hJUCBDT1VOQ0lMEE5VQ0xFQVIgTUVESUNJTkUOTlVSU0UgTUFOQUdFUlMjTlVSU0lORyBESVNBU1RFUiBSRVNQT05ERVJTIE9OIENBTEwXT0JTVEVUUklDUyAvIEdZTkVDT0xPR1kcT0NDVVBBVElPTkFMIEhFQUxUSCBTRVJWSUNFUzFPQ0NVUEFUSU9OQUwgU0FGRVRZICYgRU5WSVJPTk1FTlRBTCBIRUFMVEggKE9TRUgpF09OLUNBTEwgQU1DT00gLSBFQiBURVNUDU9QSFRIQUxNT0xPR1kaT1JBTCBNQVhJTExPRkFDSUFMIFNVUkdFUlkZT1JHQU4gRE9OQVRJT04gSU5JVElBVElWRRxPUlRIT1BBRURJQyAvIFNQT1JUUyBTVVJHRVJZCU9SVEhPVElDUxxPVE9MQVJZTkdPTE9HWS8gQURVTFQgJiBQRURTFVBBTExJQVRJVkUgQ0FSRS1BRFVMVBpQQUxMSUFUSVZFIENBUkUtUEVESUFUUklDUxJQQUxMSUFUSVZFIENBUkUtVkEJUEFUSE9MT0dZElBBVEhPTE9HWSBBTkFUT01JQxJQQVRIT0xPR1kgQ0xJTklDQUwhUEFUSUVOVCBGT09EICYgTlVUUklUSU9OIFNFUlZJQ0VTJlBFRElBVFJJQ1MgQURPTEVTQ0VOVCBNRURJQ0lORSBDT05TVUxUKlBFRElBVFJJQ1MgQkVIQVZJT1JBTCBIRUFMVEggJiBERVZFTE9QTUVOVCFQRURJQVRSSUNTIEJPTkUgTUFSUk9XIFRSQU5TUExBTlQaUEVESUFUUklDUyBDQVJESUFDIFNVUkdFUlkVUEVESUFUUklDUyBDQVJESU9MT0dZHlBFRElBVFJJQ1MgQ0hJRUYgUkVTSURFTlQgODA3MBRQRURJQVRSSUNTIERFTlRJU1RSWRhQRURJQVRSSUNTIEVORE9DUklOT0xPR1kbUEVESUFUUklDUyBHQVNUUk9FTlRFUk9MT0dZGlBFRElBVFJJQ1MgR0VORVJBTCBDT05TVUxUKlBFRElBVFJJQ1MgR0VORVRJQ1MgJiBCSU9DSEVNSUNBTCBHRU5FVElDUyBQRURJQVRSSUNTIEhFTUFUT0xPR1kgLyBPTkNPTE9HWRZQRURJQVRSSUNTIEhPU1BJVEFMSVNUDlBFRElBVFJJQ1MgSUNVHVBFRElBVFJJQ1MgSU5GRUNUSU9VUyBESVNFQVNFHlBFRElBVFJJQ1MgSU5QQVRJRU5UIEJMVUUgVEVBTSVQRURJQVRSSUNTIElOUEFUSUVOVCBFTkRPIC8gQ0FSRCBURUFNHlBFRElBVFJJQ1MgSU5QQVRJRU5UIEdPTEQgVEVBTR9QRURJQVRSSUNTIElOUEFUSUVOVCBNQUlaRSBURUFNIVBFRElBVFJJQ1MgSU5QQVRJRU5UIE9OLUNBTEwgVEVBTSBQRURJQVRSSUNTIElOUEFUSUVOVCBTSUxWRVIgVEVBTRZQRURJQVRSSUNTIE5FT05BVE9MT0dZFVBFRElBVFJJQ1MgTkVQSFJPTE9HWRRQRURJQVRSSUNTIE5FVVJPTE9HWRdQRURJQVRSSUNTIE5FVVJPU1VSR0VSWRJQRURJQVRSSUNTIE5FV0JPUk4lUEVESUFUUklDUyBPUkFMIE1BWElMTE9GQUNJQUwgU1VSR0VSWR1QRURJQVRSSUNTIE9SVEhPUEVESUMgU1VSR0VSWRpQRURJQVRSSUNTIFBMQVNUSUMgU1VSR0VSWR9QRURJQVRSSUNTIFBTWUNIT0xPR1kgSU5QQVRJRU5UFFBFRElBVFJJQ1MgUFVMTU9OQVJZF1BFRElBVFJJQ1MgUkhFVU1BVE9MT0dZElBFRElBVFJJQ1MgU1VSR0VSWRJQRURJQVRSSUNTIFVST0xPR1kdUEVSRlVTSU9OSVNULSBPUEVSQVRJTkcgUk9PTVMWUEhBUk1BQ1kgQURNSU5JU1RSQVRPUhFQSEFSTUFDWSBDTElOSUNBTCJQSFlTSUNBTCBNRURJQ0lORSAmIFJFSEFCSUxJVEFUSU9OJ1BIWVNJQ0FMIFRIRVJBUFkgJiBPQ0NVUEFUSU9OQUwgVEhFUkFQWQ9QTEFTVElDIFNVUkdFUlkcUExBU1RJQyBTVVJHRVJZIFNULiBKT0UgLyBWQRBQUFAgQ0hBUkdFIE5VUlNFGVBTWUNISUFUUlkgLSBBRFVMVCAmIFBFRFMQUFVCTElDIFJFTEFUSU9OUwlQVUxNT05BUlkSUkFESUFUSU9OIE9OQ09MT0dZIlJBRElPTE9HWSAgQURVTFQgLSBNVVNDVUxPU0tFTEVUQUwcUkFESU9MT0dZIEFEVUxUIC0gQUJET01FTiBDVB1SQURJT0xPR1kgQURVTFQgLSBBQkRPTUVOIE1SSSRSQURJT0xPR1kgQURVTFQgLSBBQkRPTUVOIFVMVFJBU09VTkQuUkFESU9MT0dZIEFEVUxUIC0gQ0FSRElPVEhPUkFDSUMgKENYUiwgQ1QsIE1SKUVSQURJT0xPR1kgQURVTFQgLSBDUk9TUyBTRUNUSU9OQUwgRk9SIElNQUdFIEdVSURFRCAoRFJBSU5TLCBCSU9QU0lFUylJUkFESU9MT0dZIEFEVUxUIC0gR0kvR1UgKFBMQUlOIEZJTE1TLCBCQVJJVU0gU1RVRElFUywgRkVFRElORyBUVUJFUywgSVZQKShSQURJT0xPR1kgQURVTFQgLSBORVVSTyBESUFHTk9TVElDIENUL01SUFJBRElPTE9HWSBBRFVMVCAtIE5FVVJPIERJQUdOT1NUSUMgUFJPQ0VEVVJFUyAoQU5HSU9HUkFQSFksIExQLCBNWUVMT0dSQU1TLCBCSU9QUFJBRElPTE9HWSBBRFVMVCAtIE5FVVJPIElOVEVSVkVOVElPTkFMIFBST0NFRFVSRVMgKFRIUk9NQk9MWVNJUywgQ09JTFMsIEVNQk9MSVpBIlJBRElPTE9HWSBBRFVMVCAtIE5VQ0xFQVIgTUVESUNJTkVDUkFESU9MT0dZIEFEVUxULSBWQVNDVUxBUiBJTlRFUlZFTlRJT05BTCAoVklSKSAodkFTQ1VMQVIsIFBUQywgUENOKS5SQURJT0xPR1kgUEVESUFUUklDIC0gQ1QgJiBNUkkgIChFWENFUFQgTkVVUk8pYFJBRElPTE9HWSBQRURJQVRSSUMgLSBJTlRFUlZFTlRJT05BTCAoSVZSKSAoYWxsIG5vbiBuZXVybyBwZWRpYXRyaWMgSVIgaW5jbHVkaW5nIENUICYgVVMgZ3VpZGVkKUxSQURJT0xPR1kgUEVESUFUUklDIC0gTkVVUk8gRElBR05PU1RJQyBQUk9DRURVUkVTIChMUCwgTVlFTE9HUkFNUywgTkVVUk8gQlgpS1JBRElPTE9HWSBQRURJQVRSSUMgLSBORVVSTyBJTlRFUlZFTlRJT05BTC9BTkdJTyAoVEhST01CT0xZU0lTLCBQUk9DRURVUkVTKSZSQURJT0xPR1kgUEVESUFUUklDIC0gTlVDTEVBUiBNRURJQ0lORTdSQURJT0xPR1kgUEVESUFUUklDIC0gUExBSU4gUkFESU9HUkFQSFMgQU5EIEZMVU9ST1NDT1BZIFJBRElPTE9HWSBQRURJQVRSSUMgLSBVTFRSQVNPVU5EK1JBRElPTE9HWSBQRURJQVRSSUMtIE5FVVJPIERJQUdOT1NUSUMgQ1QvTVITUkFQSUQgUkVTUE9OU0UgVEVBTRNSRVNQSVJBVE9SWSBUSEVSQVBZDFJIRVVNQVRPTE9HWQ9SSVNLIE1BTkFHRU1FTlQYUlJULSBSQVBJRCBSRVNQT05TRSBURUFNEVNBRkVUWSBNQU5BR0VNRU5UDlNMRUVQIE1FRElDSU5FC1NPQ0lBTCBXT1JLBlNUUk9LRRxTVVJHRVJZIDhELUlOVEVSTUVESUFURSBDQVJFLFNVUkdFUlkgQUNVVEUgQ0FSRS8gVFJBVU1BLyBCVVJOIChTQTEgJiBTQTIpE1NVUkdFUlkgQlVSTiAoU0JVUikSU1VSR0VSWSBDT0xPUkVDVEFMHFNVUkdFUlkgQ09OU1VMVFMgJiBUUkFOU0ZFUlMeU1VSR0VSWSBHQVNUUk9JTlRFU1RJTkFMIChTR0kpG1NVUkdFUlkgR0VORVJBTCAgQkxVRSAoU0dCKR9TVVJHRVJZIEdFTkVSQUwgRU5ET0NSSU5FIChHU0UpG1NVUkdFUlkgR0VORVJBTCBNQUlaRSAoU0dNKRtTVVJHRVJZIEdFTkVSQUwgV0hJVEUgKFNHVykgU1VSR0VSWSBNSU5JTUFMTFkgSU5WQVNJVkUgKE1JUykQU1VSR0VSWSBPTkNPTE9HWRhTVVJHRVJZIFRSQU5TUExBTlQgKFNUWCkXU1VSR0VSWSBWQVNDVUxBUiAgKFNWQSkdU1VSR0VSWSBWQVNDVUxBUiBWRU5PVVMgKFNWVikcU1VSR0lDQUwgQ1JJVElDQUwgQ0FSRSAoU0NDKRlUQVZSIFBST0NFRFVSQUwgTEVBRCBURUFND1RCSUNVIEFUVEVORElORw1URUxFQ09NIEdST1VQK1RFU1QgSEVNQVRPTE9HWSAvIE9OQ09MT0dZIERBWVRJTUUgQ09WRVJBR0UPVEhPUkFDSUMgQU9SVElDFlRIT1JBQ0lDIFNVUkdFUlkgKFNURykWVFJBTlNQTEFOVCBDT09SRElOQVRPUg9VSCBDSEFSR0UgTlVSU0UfVUhTIC0gVU5JVkVSU0lUWSBIRUFMVEggU0VSVklDRQdVUk9MT0dZD1ZBRCBDT09SRElOQVRPUhhWQVNDVUxBUiBMQUIgVEVDSCAgIzM1MDAbVkVOT1VTIEhFQUxUSCBQUk9HUkFNIChWSFApJVZJUiBEQVkgQ09OU1VMVEFUSU9OUyBNb25kYXkgLSBGcmlkYXkV6wEGMTM2NDQ1BjE0MDkyNQYxMzY5MTEFOTA0MDUFNzQ4MDQFMjU1MjAGMTA0NzA0BjEwNzI3NAUxMDI2MwU5OTQwNwU0NzU5NgU3MjU3NAU3NDE0NgU1NjQxOQU3NDMwNQU3NDQzOAU3NDA0OAU3NDA0NAU2OTk1NwU3MzQ4NAU2NjQ1OAU2NjQ1NgU2NjQzNgU2NjQ2MAU2NjQ3NgUxODk0NwYxMDgwNDUFNzQ0NjYFNzQ1NjgFNzU2MDYFNTYzOTYFNzQ3MDQFNzQzMTIFNzQxMzIFNzQxMjcGMTIzNjk5BTc0ODg0BTEwMjYwBTk5NTQ0BTI1NTE2BTI1NTE3BTI1NDk2BTEwMjgwBjEyMjY4NQU5OTUwNAU4NjQ3NwU3NDI2NwYxMDUxNDMFMTg5MzMFMzA1NzYFMjQ3OTYFMTg3NjMGMTM0MjUzBTEwMjc5BjEwNTM0OQYxMDgyNDAFOTc4NjQFMTg5ODcFMTg5MjMFOTkyNjQGMTM3ODA1BjEzODgyNgYxNDA0ODAFMTg5MjYGMTE5OTk1BTI4NzE3BTEwMjkxBTEwMjkzBTMwMjM3BTY1Njc2BTEwMjk1BTEwMjk3BTE4OTM1BTkxMjEzBTQxMjc2BTI0Njk5BTk2OTgyBTg1MjQ0BTEwMzE1BTE4OTM4BTk5NDg0BjEzNjYxNAYxMDcxOTgFNzQ1NjYFODQyMjQFNzQyMzIFMTg5NDYFODM3OTAGMTAwNTg3BTc0NTE1BjE0MTIzNwYxNDEyMzgGMTQxMjM5BTI1NTIxBjEwNTI3OQU3Nzc1OQU0MjM3NgU5OTIwNQYxMDg2ODQGMTMwNzEzBTI1NTIyBjEwODYzMwYxMDUxMjMFMTgzNjAFMTg5NTUGMTI5MjQyBjEyOTI0MwUxODk1NgYxMDc5NDYGMTA4MjM4BTE4OTU3BjEwODIzOQYxMDU1MTUFMTg1MjQFNDE2NzcFNzMxNjcFNzA4MDcFMTg1MjcFMTg5ODgGMTAwNzI5BTE4NTM1BTI4MDE3BTE4OTkwBTg1ODY0BTg1ODY1BjExOTM3NQUxODk4OQU3NDgyNwU3NDgyOAU4MDgwNAU5NTkxNgU4MTUwNAYxMDg1MTQFMTg5NzgFMTAzMDUFMjUzMzcFMjQ3OTkFMjQ4NzYFMTg1NTIGMTMwODY3BTI0ODc3BTE4OTg0BTc4MTA0BTE4OTgzBTI0ODc5BTc5NjA2BjEzNjM0NwYxNDMzMzAFNzk2MDUFMTg5ODYFNzk2MDgFMjgzMDQFMTg5ODIFNDU5NTcFMjQ4ODAFMjgxMzYGMTMxMzg3BjEyMzgxNwUyNDg4MwUzNjA5NgUyNDg4NgUxODUwNAUxODk3OQUyNDg5NwUxODkzMgU3ODQwNAYxMTUxNzUFMTg5NzYFODIyODUFMTg5NzUFOTgxMTQGMTA4MjM3BTE4OTc0BTI1NTI0BTE4OTkyBTE4OTY3BTk5NjcxBTk5NjA0BTk5NjEwBTk5NjEzBTk5NjI2BTk5NjA3BTk5NjI5BTk5NjM0BTk5NjM2BTk5NjM4BTk5NjM5BTk5NjMyBTk5NjQxBTk5NjQ0BTk5NjUxBTk5NjU1BTk5NjU4BTk5NjYxBTk5NjY1BTk5Nzg0BjExNDU1NQYxNDEzNDcFMjQ5MDEGMTExMTE1BjExNDU3NQYxMDkxMDIGMTI5MjQxBTE4NTgyBTk4NDg2BjEwNTI3NwYxMzYzMDAGMTM5Mzk3BjEzNjQyOAU3NDM0NAUxODU4NwYxMjI1NTcFMTg1ODYGMTIyNTU5BjEyMjU1OAYxMDM0MDQGMTM2NDI3BTE4NTg5BTE4OTM5BjEwNjEyOQU4MTU0NAYxNDA3MDgGMTM2OTE5BTc4NDg0BTk4MTE1BjEwODMxNQUxODkzNgUxODkzMAYxMDgyMzYGMTI4ODI5BTE4OTI0BTY5MDE2BTE4NjEwBjEzODY1MQYxMTYwMzUUKwPrAWdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIVDxAPFgYfAgUETmFtZR8DBQZEZXB0SUQfBGdkEBUZEVZBIEFORVNUSEVTSU9MT0dZDVZBIENBUkRJT0xPR1kLVkEgREVOSVNUUlkOVkEgREVSTUFUT0xPR1kSVkEgR0VORVJBTCBTVVJHRVJZGFZBIEhFTUFUT0xPR1kgLyBPTkNPTE9HWRVWQSBJTkZFQ1RJT1VTIERJU0VBU0UlVkEgSU5URVJOQUwgTUVESUNJTkUgR0FTVFJPRU5URVJPTE9HWSVWQSBJTlRFUk5BTCBNRURJQ0lORSBHRVJJQVRSSUNTICYgQ0xDPVZBIElOVEVSTkFMIE1FRElDSU5FIElNIEVORE9SQ1JJTk9MT0dZLCBESUFCRVRFUyAmIE1FVEFCT0xJU00kVkEgSU5URVJOQUwgTUVESUNJTkUgUEFMTElBVElWRSBDQVJFIVZBIElOVEVSTkFMIE1FRElDSU5FIFJIRVVNQVRPTE9HWSZWQSBJTlRFUlZFTlRJT05BTCAvIFZBU0NVTEFSIFJBRElPTE9HWQ1WQSBORVBIUk9MT0dZDFZBIE5FVVJPTE9HWQ9WQSBORVVST1NVUkdFUlkQVkEgT1BIVEhBTE1PTE9HWRZWQSBPUlRIT1BBRURJQyBTVVJHRVJZF1ZBIE9UT0xBUllOR09MT0dZIChFTlQpDVZBIFBTWUNISUFUUlkcVkEgUFVMTU9OQVJZIC8gQ1JJVElDQUwgQ0FSRRRWQSBSQURBVElPTiBPTkNPTE9HWQxWQSBSQURJT0xPR1kTVkEgVEhPUkFDSUMgU1VSR0VSWQpWQSBVUk9MT0dZFRkGMTQzMDY5BTc1MjI3BjE0MzA3MAYxNDMwNzEGMTQzMDk4BjE0MjY2MQYxNDI2NTEGMTQzMDczBjE0MzA5MwYxNDMwNzIGMTQzMDk0BjE0MzA5NQYxNDI2NDgGMTQyNjgwBjE0MzA2NgYxNDI2NTQGMTQzMDk2BjE0MjY2OAYxNDI2NDUGMTQzMDk3BjE0MjY1NwYxNDI2NDMGMTQyNjk3BjE0MzA0NAYxNDI2NzQUKwMZZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAhkPDxYCHwBlZGRkM2xm5hNtnMsedWfk6GXvkEsZVBo=">
-                        </div>
-                        <div class="aspNetHidden">
-                            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
-                        </div>
-                        <span class="hidetext"><strong>Michigan Medicine Paging:</strong></span>
-                        <input name="ctl00$ContentPlaceHolder1$txtNameOrNo" type="text" id="ContentPlaceHolder1_txtNameOrNo" onkeydown="return returnPressed();" onfocus="if (this.value == &#39;Last Name or Pager #&#39;) this.value = &#39;&#39;;" onblur="if (this.value == &#39;&#39;) this.value = &#39;Last Name or Pager #&#39;;" value="Last Name or Pager #">
-                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSearch" value="Search" onclick="return requiredField();" id="ContentPlaceHolder1_btnSearch">
-                        <script language="javascript" type="text/javascript">
-                        function requiredField() {
-                            var oTxt = null;
-                            var msg = "";
-
-                            oTxt = document.getElementById("ContentPlaceHolder1_txtNameOrNo");
-
-                            if (oTxt != null) {
-                                if (oTxt.value == "") {
-                                    alert("Please enter a Pager Number or Last Name");
-                                    return false;
-                                }
-                            }
-
-                            return true;
-                        }
-
-                        function returnPressed() {
-                            if (event.which || event.keyCode) {
-                                if ((event.which == 13) || (event.keyCode == 13)) {
-                                    document.getElementById('ContentPlaceHolder1_btnSearch').click();
-                                    return false;
-                                }
-                            } else {
-                                return true
-                            };
-                        }
-                        </script>
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                    </form>     -->
-                    
-                    
-                    <ul>
-                        <h2>lectura</h2>
-                        
-                            <a href="https://lifehacker.com/">lifehacker</a>  <strong class="pipe">|</strong> 
-                            <a href="https://www.howtogeek.com/">howtogeek</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.pcworld.com/howto/">pcworld</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.pcmag.com/how-to">pcmag</a> <strong class="pipe">|</strong> 
-                            <a href="https://averagelinuxuser.com/">averagelinuxuser</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.avoiderrors.com/">avoiderrors</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.makeuseof.com/service/linux/">makeuseof linux</a> <strong class="pipe">|</strong> 
-                            <a href="https://www.taringa.net/">taringa.net</a> <strong class="pipe">|</strong> 
-                        
-                    </ul>
-
-<!--
-                <select><option value="#">Directories</option><option value="https://uhmspaging.med.umich.edu/homePaging/PagingSend/search.aspx">Paging</option><option value="http://directory.umich.edu/">M Community Directory</option><option value="http://www.med.umich.edu/i/directory/">Dept. Directory</option><option value="https://www.uofmhealth.org/our-locations/">UM Clinic Locations</option><option value="http://med.umich.edu/umhs/health-providers/MLINE.html">M-LINE</option><option value="https://platformpr2ext.med.umich.edu/ope/pcc-tech/marketscopesearch/">MarketScope MD Lookup</option><option value="http://www.med.umich.edu/i/searchtindex.html">Michigan Medicine Websites A to Z</option></select></nav>
-                
-                
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                <nav id="bed">     -->
-					
-					
-                    <ul>
-                        <h2>fitness</h2>
-                        
-                            <a href="https://www.youtube.com/watch?v=A2wp8Ipxn9s">workout seniors</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=7KSNmziMqog">10 min workout</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=UyTR2EjTAXU">Tone Your Arms</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=n8-FALARtJ8">15 posturas yoga</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=fldE8Ukcvrc">Vinyasa Yoga</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=PIkibAajz2w">Rhyanna Watson</a> <strong class="pipe">|</strong>
-                            <a href="https://www.fitnessblender.com/videos/intense-at-home-hiit-routine-no-equipment-hiit-workout-video-with-low-impact-modifications">low impact</a> <strong class="pipe">|</strong>
-                            <a href="https://www.self.com/gallery/cardio-exercises-at-home-workout">home workout</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=qL1BzLMsMXU">triple plancha</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=QhuMeVnn_qU">cardio intenso</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=rCau44E1F54">burpees</a> <strong class="pipe">|</strong>
-                            <a href="https://ubiquinol.org/blog/11-yoga-poses-strength-and-flexibility">11 Yoga Poses</a> <strong class="pipe">|</strong>
-
-                    </ul>
-
-
-<!--
-                <select><option value="#">Directories</option><option value="https://uhmspaging.med.umich.edu/homePaging/PagingSend/search.aspx">Paging</option><option value="http://directory.umich.edu/">M Community Directory</option><option value="http://www.med.umich.edu/i/directory/">Dept. Directory</option><option value="https://www.uofmhealth.org/our-locations/">UM Clinic Locations</option><option value="http://med.umich.edu/umhs/health-providers/MLINE.html">M-LINE</option><option value="https://platformpr2ext.med.umich.edu/ope/pcc-tech/marketscopesearch/">MarketScope MD Lookup</option><option value="http://www.med.umich.edu/i/searchtindex.html">Michigan Medicine Websites A to Z</option></select></nav>
-                
-                
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                <nav id="bed">     -->
-					
-					
-                    <ul>
-                        <h2>diy | cocina</h2>
-                        
-                            <a href="https://saschafitness.com/">sascha fitness</a> <strong class="pipe">|</strong>
-                            <a href="https://www.pizcadesabor.com/">pizcadesabor</a> <strong class="pipe">|</strong>
-                            <a href="https://cocina.facilisimo.com/">cocina.facilisimo</a> <strong class="pipe">|</strong>
-                            <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">coffee grinder</a> <strong class="pipe">|</strong>
-                            <a href="https://www.seriouseats.com/">seriouseats</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=WTXPvCu953Q">tasties chicken</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=sU2PvBp1xcE">muslos in a Pan</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=Wiv4FTYavYQ">german sausage</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">Custom Earbuds</a> <strong class="pipe">|</strong>
-                            <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">diy pegboard</a> <strong class="pipe">|</strong>
-
-                    </ul>
-
-            </div>
-
-<!--
-                <select><option selected="selected" value="">Bed Status</option><option value="https://umhealth.sharepoint.com/sites/M2C2/SitePages/ABCC-Resources(1).aspx">Admissions &amp; Bed Coordination Center</option><option value="https://bedbriefing.med.umich.edu/">UH/CVC Bed Briefing Form</option></select></nav>     -->
-                
-                
-            <!--right-->
-            <div id="right">
-<!--				
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                <nav id="resources">     -->
-                
-                    <ul>
-                        <h2>videos</h2>
-                        
-                            <a href="https://seriesflix.nu/">seriesflix.nu</a> <strong class="pipe">|</strong>
-                            <a href="https://pelisplus.me/">pelisplus.me</a> <strong class="pipe">|</strong>
-                            <a href="https://pelisplus2.org/">pelisplus2</a> <strong class="pipe">|</strong>
-                            <a href="https://pelis-play.com/">pelis-play.com</a> <strong class="pipe">|</strong>
-                            <a href="https://seriesmanta.in/ver-serie">seriesmanta</a> <strong class="pipe">|</strong>
-                            <a href="https://cine24h.net/">cine24h.net</a> <strong class="pipe">|</strong>
-                            <a href="http://www.peliculaschingonas.org/">peliculaschingonas</a> <strong class="pipe">|</strong>
-                            <a href="https://www1.cuevana3.video/">cuevana3</a> <strong class="pipe">|</strong>
-                            <a href="http://www.cinehdencasa.com/">cinehdencasa</a> <strong class="pipe">|</strong>
-                            <a href="https://novelas360.com/">novelas360</a> <strong class="pipe">|</strong>
-                            <a href="https://tekilaz.co/">tekilaz.co</a> <strong class="pipe">|</strong>
-                            <a href="https://seriespapaya.tv/">seriespapaya.tv</a> <strong class="pipe">|</strong>
-                            <a href="https://cinerama91.com/">cinerama91</a> <strong class="pipe">|</strong>
-                            <a href="https://somosmovies.com/">somosmovies</a> <strong class="pipe">|</strong>
-                            <a href="https://cliver.site/">cliver.site</a> <strong class="pipe">|</strong>
-                            <a href="https://movidy.club/">movidy.club</a> <strong class="pipe">|</strong>
-                            <a href="https://movidy.red/">movidy.red</a> <strong class="pipe">|</strong>
-                            <a href="https://www.movidy.mobi/">movidy.mobi</a> <strong class="pipe">|</strong>
-                        
-
-                    </ul>
-                    
-<!--                    
-                <select><option selected="selected" value="">Clinical Resources</option><option value="http://www.med.umich.edu/clinical/clinicalresources.htm">Clinical Resources</option><option value="http://www.med.umich.edu/i/cvc/anticoag">Anticoagulation Service</option><option value="http://www.med.umich.edu/i/vte/">VTE</option><option value="http://www.med.umich.edu/i/nursing-CareManagement/">Care Management</option><option value="http://www.med.umich.edu/clinical/clinicaldepts.htm">Clinical Organizations </option><option value="http://www.med.umich.edu/i/oca/consents/index.html">Consent Forms: Gen Surgical</option><option value="clinicalresources.htm">Consent Forms: Others</option><option value="http://www.med.umich.edu/i/ice/">Infection Control</option><option value="https://quality.i.medicine.umich.edu/tools/L">Lean in Daily Work</option><option value="http://www.med.umich.edu/i/michart/">MiChart Website</option><option value="https://trainingportal.med.umich.edu/">Training Portal</option><option value="http://www.med.umich.edu/homecare/">MVN and Home Care Services</option><option value="http://www.med.umich.edu/i/nac">Nutrition</option><option value="http://www.med.umich.edu/socialwork/oda/">Office of Decedent Affairs</option><option value="http://www.med.umich.edu/interpreter/pdf/OPI-Guidelines.pdf">Over-the-Phone Interpretation Services</option><option value="http://www.med.umich.edu/i/pain">Pain Management</option><option value="https://quality.i.medicine.umich.edu/divisions/clinical-design-innovation/sepsis-michigan-medicine">Sepsis</option><option value="http://www.med.umich.edu/i/supplychain/">Supply Chain Services</option><option value="https://virtualcare.i.medicine.umich.edu/">Virtual Care Website</option></select></nav>
-                
-                
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                <nav id="references">     -->
-                
-                
-                    <ul>
-                        <h2>de referencia</h2>
-                        
-                            <a href="https://arcolinuxforum.com/viewforum.php?f=80">Known issues</a> <strong class="pipe">|</strong>
-                            <a href="https://forum.archlabslinux.com/t/how-to-include-systemlogs-in-your-post-when-trouble-shooting/4638">systemlogs</a> <strong class="pipe">|</strong>
-                            <a href="https://wiki.archlinux.org/title/Swap">Swap</a> <strong class="pipe">|</strong>
-                            <a href="https://pages.github.com/">GitHub Pages</a> <strong class="pipe">|</strong>
-                            <a href="https://www.spreadsheetclass.com/make-text-lowercase-in-google-sheets-with-the-lower-function/">text lowercase</a>   <strong class="pipe">|</strong>
-                            <a href="https://www.garron.me/en/linux/bash-password-manager.html">pwd manager</a>   <strong class="pipe">|</strong>
-                            <a href="https://vitux.com/generation-of-a-random-password-on-linux-shell/">random password</a>   <strong class="pipe">|</strong>
-                            <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html#17711167">link new tab</a>   <strong class="pipe">|</strong>
-                            <a href="https://averagelinuxuser.com/backup-and-restore-your-linux-system-with-rsync/">backup restore</a>   <strong class="pipe">|</strong>
-                            <a href="https://sangams.com.np/how-to-restore-reinstall-grub-bootloader-in-arch-linux/">Restore GRUB</a>   <strong class="pipe">|</strong>
-                            <a href="https://itsfoss.com/apt-command-guide/">apt Commands</a> <strong class="pipe">|</strong>
-                            <a href="https://github.com/philc/vimium">vimium</a> <strong class="pipe">|</strong>
-                            <a href="http://www.saberia.com/herramientas/generador-palabras/">generador palabras</a> <strong class="pipe">|</strong>
-                            <a href="https://convertcase.net/">convert case</a> <strong class="pipe">|</strong>
-                            <a href="https://linuxhint.com/update_ubuntu_2004_command_line/">Update Ubuntu</a>   <strong class="pipe">|</strong>
-                            <a href="https://code.luasoftware.com/tutorials/linux/lubuntu-enable-autologin/">autologin</a>   <strong class="pipe">|</strong>
-                            <a href="https://www.tecmint.com/set-display-screen-resolution-in-ubuntu/">screen resolution</a> <strong class="pipe">|</strong>
-                            <a href="https://github.com/JonnyHaystack/i3-resurrect">i3-resurrect</a>   <strong class="pipe">|</strong>
-                            <a href="https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f">access token</a>   <strong class="pipe">|</strong>
-                            <a href="https://www.cnet.com/products/asus-x441ba-cba6a-14-a6-9225-4-gb-ram-500-gb-hdd/">X441BA</a>   <strong class="pipe">|</strong>
-                            <a href="https://wiki.archlinux.org/index.php/User:Nasdack/Thinkorswim">archlinux TOS</a>   <strong class="pipe">|</strong>
-                            <a href="https://www.reddit.com/r/archlinux/comments/juianf/is_there_a_software_that_runs_a_command_at_a_time/">runs command</a> <strong class="pipe">|</strong>
-                            <a href="https://archlabslinux.gitlab.io/docs/customization/nitrogen_and_feh.html">Nitrogen Feh</a> <strong class="pipe">|</strong>
-                            <a href="https://www.techhive.com/article/3605021/5-things-i-learned-while-setting-up-my-first-media-server.html">media server</a> <strong class="pipe">|</strong>
-                            <a href="https://restoreprivacy.com/google-alternatives/">google alternatives</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=IhvJevHc7jE">debian testing</a> <strong class="pipe">|</strong>
-                            <a href="https://wiki.manjaro.org/index.php?title=ALSA">ALSA Manjaro</a> <strong class="pipe">|</strong>
-                            <a href="https://lecorbeausvault.wordpress.com/2021/01/15/the-basics-of-noscript/">noscript</a> <strong class="pipe">|</strong>
-                            <a href="https://www.freeformatter.com/html-formatter.html#ad-output">HTML Formatter</a>   <strong class="pipe">|</strong>
-                            <a href="https://duckduckgo.com/?q=html+formatter+online&amp;t=vivaldi&amp;ia=answer">html formatter online</a>   <strong class="pipe">|</strong>
-                            <a href="https://github.com/PhyTech-R0/dwm-phyOS/">phyOS</a>   <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=MdklRM6zkr4">monitor laptop vieja</a>   <strong class="pipe">|</strong>
-                            <a href="https://jacekkowalczyk82.github.io/my-debian/">LDD Linux</a>   <strong class="pipe">|</strong>
-                            <a href="https://linuxiac.com/ubuntu-with-virtualbox/">Ubuntu VirtualBox</a> <strong class="pipe">|</strong>
-                            <a href="https://www.howtogeek.com/196060/beginner-geek-how-to-create-and-use-virtual-machines/">set virtual machines</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=4SlP1hJutt4">tablas dinamicas</a> <strong class="pipe">|</strong>
-                        
-                    </ul>
-
-            </div>
-
-<!--
-                <select><option selected="selected" value="">Clinical References</option><option value="http://www.med.umich.edu/clinical/references.htm">Clinical References</option><option value="https://www.med.umich.edu/asp/">Antimicrobial Stewardship/Guides</option><option value="http://www.uofmhealth.org/provider/clinical-care-guidelines">FGP  Guidelines:  Ambulatory 
-                </option><option value="http://www.uofmhealth.org/provider/clinical-care-guidelines">FGP  Guidelines: Inpatient</option><option value="https://michmed-clinical.policystat.com/policy_search/reference/?terms=63973&amp;search_query=">Consult Request Guidelines</option><option value="http://em.i.medicine.umich.edu/clinical-operations/service-triage-guidelines">Service Triage Guide (Inpatient)</option><option value="igp.htm">Internal Guides and Protocols</option><option value="https://www.lib.umich.edu/locations-and-hours/taubman-health-sciences-library">Taubman Health Sciences Library</option><option value="https://www.lib.umich.edu/taubman-health-sciences-library/informationists">Library Contacts </option><option value="https://guides.lib.umich.edu/clinical">E-Resources </option><option value="https://www.lib.umich.edu/database/link/8859">Ovid MEDLINE</option><option value="https://www.lib.umich.edu/database/link/9817">PubMed</option><option value="https://www.lib.umich.edu/database/link/29221">ClinicalKey </option><option value="https://apps.lib.umich.edu/database/link/11791">Cochrane Library</option><option value="https://www.lib.umich.edu/database/link/10599">DynaMed</option><option value="http://www.uptodate.com/online"> Up-to-Date</option><option value="https://www.lib.umich.edu/database/link/10597">R2 Dig Lib</option><option value="https://search.lib.umich.edu/onlinejournals/browse">E-journals</option><option value="https://apps.lib.umich.edu/database/link/11185">VisualDx</option><option value="http://www.med.umich.edu/clinical/images/FAQ.pdf">New Age Limit of Pediatrics</option><option value="http://www.med.umich.edu/i/pteducation/healthtopics.htm">Patient Education</option><option value="https://online.lexi.com/lco/action/home">Lexicomp</option><option value="https://online.epocrates.com/noFrame/">Epocrates</option><option value="calculators.htm">Calculators</option></select></nav>     -->
-                
-                
-            <div id="news"> 
-
-<!--
-<section id="links">
-          <nav id="other">
-                    <select><option selected="selected" value="">Other Links</option><option value="http://www.med.umich.edu/">Michigan Medicine Gateway</option><option value="http://www.med.umich.edu/i/">Michigan Medicine Internal</option><option value="http://www.med.umich.edu/medschool/">U-M Medical School</option><option value="http://www.umich.edu/">U-M Main Site</option><option value="http://www.med.umich.edu/i/oca/initiatives/restraints.htm">New Provider Restraint Information</option><option value="feedbackform.html">Suggestions</option><option value="http://help.medicine.umich.edu/sp">Request IT Assistance</option><option value="https://i.med.umich.edu/MCIT/CS/customer/askforhelp/Lists/Outages/Current.aspx">Current Outages</option><option value="http://www.aramarkcafe.com/layouts/canary_2010/locationhome.aspx?locationid=2020">Hospital Cafeteria Menu</option><option value="http://www.med.umich.edu/i/staff.html">Staff Resources</option><option value="http://faculty.medicine.umich.edu/">Faculty Development</option><option value="http://www.med.umich.edu/i/research.htm">Research </option><option value="http://www.med.umich.edu/i/edu.htm">Education</option><option value="https://hits.medicine.umich.edu/about-hits/get-help">HITS Customer Service </option></select></nav>
-                   <!--<p><a href="https://www.doximity.com/"><img src="images/Register-for-DoximityFNL.png" alt="Register for Deximity" width="197" height="204" /></a></p>
-                     <p><a href="http://www.med.umich.edu/i/ebola/index.html"><img src="images/promo/ebola.jpg"  alt="Ebola" /></a></p>-->
-<!--<p><a href='2020 Michigan Medicine Holiday Availability-FINAL.xlsx'><img src='images/promo/hol-hours.jpg'   alt='Holiday Hours' /></a></p>
-<p><a href="https://www.med.umich.edu/i/clinical/information-blocking.pdf"><img src="./michiganhomepage_files/information-blocking.jpg" alt="information blocking"></a></p>
-<p><a href="http://www.med.umich.edu/i/ice/resources/coronavirus.html"><img src="./michiganhomepage_files/novel-coronavirus-sm.png" alt="novel coronavirus Information"></a></p>
-
-
-<p><a href="https://wellnessoffice.med.umich.edu/"><img src="./michiganhomepage_files/COVID-19well-being.png" alt="COVID-19 Well-Being"></a></p>
-
-<a href="https://compliance.umich.edu/" class="button button--lt-background" target="_blank" rel="noopener noreferrer">
-          <svg width="48" height="46" xmlns="http://www.w3.org/2000/svg">
-            <path transform="translate(0 -73)" fill-rule="evenodd" d="M14.301676 118.497207L5.00558659 112.240223 16.3575419 98.5642458 0 93.6480447 3.48603352 83.4581006 19.0391061 89.9832402 18.2346369 73 29.7653631 73 28.9608939 89.9832402 44.5139665 83.4581006 48 93.6480447 31.6424581 98.5642458 42.9050279 112.240223 33.6089385 118.407821 23.9553073 103.927374z"></path>
-          </svg>
-          Learn more about U-M compliance »<br><br><span style="font-size: 90%;">Report a Concern</span>
-      </a>
-
-<p><a href="https://docs.google.com/spreadsheets/d/1Bcejx_5PlBTQsT0z4atCyZgu0t7zUQk2VMu-0pr5nEA/edit#gid=1085658882"><img src="./michiganhomepage_files/UH-CVC-Capacity-Huddle.png" alt="UH/CVC Capacity-Huddle"></a></p>
-
-<p><a href="http://www.med.umich.edu/u/parking/"><img src="./michiganhomepage_files/small-parking.png" alt="Parking Information"></a></p>
-
-                    
-                     
-                    
-                    <p>
-                        <script language="JavaScript">
-                        images = new Array(5);
-
-                      images[0] = "<a href='http://uh-cvc.i.medicine.umich.edu/our-house-monday-minute'><img src='images/promo/Monday-Minute.jpg'   alt='Monday Minute' /></a>";
-images[1] = "<a href='https://staffombuds.umich.edu/'><img src='images/promo/Ombuds.jpg'   alt='Ombuds' /></a>";
-images[2] = "<a href='https://sexualmisconduct.umich.edu/training/'><img src='images/promo/Misconduct CHP ad.jpg'   alt='sexual misconduct' /></a>";
-images[3] = "<a href='https://hits.medicine.umich.edu/projects/spring-michart-system-upgrade-2022'><img src='images/promo/Spring2022WEBBADGE.png'   alt='MiChart Update' /></a>";
-images[4] = "<a href='http://www.med.umich.edu/i/policies/umh/transition.html'><img src='images/promo/policy-stat-promo.jpg'   alt='Transition to PolicyStat' /></a>"; 
-<!--images[4] = "<a href='http://michmed.org/Fluency'><img src='images/promo/fd-promo.jpg'   alt='Fluency' /></a>";
-
-                        index = Math.floor(Math.random() * images.length);
-                        document.write(images[index]);
-                        </script><a href="https://sexualmisconduct.umich.edu/training/"><img src="./michiganhomepage_files/Misconduct CHP ad.jpg" alt="sexual misconduct"></a>
-                        <noscript></noscript>
-                    </p>
-                    
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                    <nav id="other2">       -->
-                    
-                    
-                        <ul>
-                            <h2>inversiones</h2>
-                            
-                            <a href="https://www.youtube.com/user/jarcilav">Tradeknowlogy</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/c/jarcilav/videos">Tradeknowlogy videos</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/c/jarcilav/playlists">Tradeknowlogy playlists</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/channel/UCjKX-osBEQxj9CrZsK9ZM9g/videos">Oscar Lopez</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/channel/UCCbv0qixG-cyokxEY3kELtg">TradingLab</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/channel/UCjbEAhCd_8bEEbPbs4kJPEA">sigma option</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/playlist?list=PLf5N6dqfQaNSDnFK64xtZ5O9tACxqrNdg">TDA options</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=rDnaP-zT4us">spreads mobile app</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=_0e2zJFmsgc">TOS Scans</a> <strong class="pipe">|</strong>
-                            <a href="https://www.finviz.com/">finviz.com</a> <strong class="pipe">|</strong>
-                            <a href="https://www.barchart.com/">barchart.com</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=FcjZzq0HxU4">tos mobile app</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=R-oyaI3v4F8">tos mobile app 2</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=Z7SBfMAiDfY">forex crypto</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=O4JYpaPeqbw">Heiking Ashi Swing</a> <strong class="pipe">|</strong>
-
-                        </ul>
-                    
-
-<!--				
-                            <a href="" ></a> <strong class="pipe">|</strong>
-                     -->
-
-                        <ul>
-                            <h2>win related</h2>
-                            
-                            <a href="https://www.youtube.com/watch?v=PhDqG-gZMME">optimiza Win10</a> <strong class="pipe">|</strong>
-                            <a href="https://www.pcworld.com/article/563788/seven-ways-in-which-microsofts-powertoys-improves-my-life.html">powertoys</a> <strong class="pipe">|</strong>
-                            <a href="https://www.laptopmag.com/articles/reset-windows-10-pc">reset win10</a> <strong class="pipe">|</strong>
-                            <a href="https://www.windowscentral.com/tips-tricks-increase-pc-performance-windows-10">win10 performance</a> <strong class="pipe">|</strong>
-                            <a href="https://www.youtube.com/watch?v=I88UMoRpK_o">shutdown button</a> <strong class="pipe">|</strong>
-                            <a href="https://github.com/lukesampson/scoop/wiki/Quick-Start">scoop Quick-Start</a> <strong class="pipe">|</strong>
-                            <a href="https://techrevelations.de/2018/07/21/improve-your-chuwi-tablet-with-a-clean-and-secure-windows-10-installation/">improve chuwi</a> <strong class="pipe">|</strong>
-                            <a href="https://www.amazon.com/dp/B01NCO6P93/">chuwi hi10 plus</a> <strong class="pipe">|</strong>
-
-                        </ul>
-
-<!--                    <select></select></nav>       -->
-    
-                
-            </div>
-        </div>
-<!--        <footer>
-            <nav id="footer-nav">
-                <ul>
-                    <li><a href="http://www.med.umich.edu/i/staff.html" class="other">tabla</a></li>
-                    <li><a href="http://faculty.medicine.umich.edu/" class="other">tabla</a></li>
-                    <li class="lastlink"><a href="https://hits.medicine.umich.edu/about-hits/get-help" class="other">tabla</a></li>
-                    <li><a href="http://www.med.umich.edu/i/research.htm" class="other">tabla</a></li>
-                    <li><a href="http://www.med.umich.edu/i/edu.htm" class="other">tabla</a></li>
-                    <li class="lastlink"><a href="https://hits.medicine.umich.edu/about-hits/get-help" class="other">tabla</a></li>
-                </ul>
-            <select></select></nav>
-        </footer>
+      <!-- https://codepen.io/bnthor/pen/WQBNxO -->
+      <div id="toggleWrapper" class="toggleWrapper">
+        <input type="checkbox" class="theme" id="theme"><label for="theme" class="toggle">
+          <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+          </span>
+          <span class="star star--1"></span>
+          <span class="star star--2"></span>
+          <span class="star star--3"></span>
+          <span class="star star--4"></span>
+          <span class="star star--5"></span>
+          <span class="star star--6"></span>
+        </label>
+      </div>
     </div>
+<!--                
+    <div class="head">
+      <div class="logo"><img src="index_files/fox.svg"></div>
+      <div class="searchBox">
+        <form autocomplete="off" class="search" action="https://www.google.com/search" method="get">
+          <img class="engine" id="engine" src="index_files/google.svg">
+          <div class="autocomplete">
+            <input id="inputBox" class="inputBox" type="text" name="q" placeholder="Search with Google">
+            <div id="autocomplete-items" class="autocomplete-items"></div>
+          </div>
+          <input class="button" src="index_files/search.svg" name="submit" type="image">
+        </form>
+      </div>
+    </div>
+  -->
+    <div class="bmContainer">
+      <div class="category">
+        <h2>principal</h2>
+        <!--        <div class="icon code"><img src="index_files/code.svg"></div> -->
+        <div class="bookmarks code">
+          <a href="http://www.bankofamerica.com/online-banking/sign-in/">bofa</a>
+          <a href="https://login.1stnb.com/tob/live/usp-core/app/login/consumer">1stnb</a>
+          <a href="https://www.reliant.com/public/login/index.htm">reliant</a>
+          <a href="https://www.att.com/">att.com</a>
+          <a href="https://my.xfinity.com/">xfinity</a>
+          <a href="https://myaccount.boostmobile.com/sign-in.html">boostmobile</a>
+          <a href="http://gmail.com/">gmail</a>
+          <a href="https://keep.google.com/">google keep</a>
+          <a href="https://www.mint.com/">mint.com</a>
+          <a href="https://www.mail.com/#.7518-header-logo1-1">mail.com</a>
+          <a href="http://mail.yandex.com/">mail yandex</a>
+          <a href="http://www.facebook.com/">facebook</a>
+          <a href="https://www.tdameritrade.com/home.page">TD Ameritrade</a>
+          <a href="https://trade.thinkorswim.com/" >thinkorswim web</a>
+          <a href="https://drive.google.com/drive/my-drive">My Drive</a>
+          <a href="https://docs.google.com/spreadsheets/d/1boZkH_hrklfSYaTMTvh5jW1r0MOsPPqjEL_Ge5mxotA/edit#gid=504902444">expense tracker</a>
+        </div>
+      </div>
 
-         <script>
+      <div class="category">
+        <h2>principal</h2>
+<!--<div class="icon docs"><img src="index_files/docs.svg"></div> 
+          <a href=""></a>
+-->        
+        <div class="bookmarks docs">
+          <a href="https://docs.google.com/spreadsheets/d/1jAmGyJZqT_v59_t5ndsKSH1lpo2BJRPH9HFh6Yz2Y_8/edit#gid=680333604">2022</a>
+          <a href="https://docs.google.com/spreadsheets/d/1KA1EiIsHQO9wdgMmHyqVtNkYF94YvP3prWQDkvT_iRw/edit?usp=sharing">secuencia portafolio</a>          
+          <a href="https://docs.google.com/spreadsheets/d/1eqVMroEr9CUuYggyrFx3jYroxv1XI5PD-Icj6qkJ7sU/edit?usp=sharing">plan 2022 empresas</a>
+          <a href="https://docs.google.com/document/d/1Vb4YjLWd0g7bsfomRSVcXavByldGmWU3Vxqt1a6ZbwE/edit">mis notas</a>
+          <a href="https://github.com/ichozxc/ichozxc.github.io/blob/master/index.html">ichozxc.github.io</a>
+          <a href="https://docs.google.com/spreadsheets/d/1B40h6GNh7ecSTHk9V2Y6BKrYAumResYL931kqTxIXsM/edit#gid=1206916439">quiniela</a>
+          <a href="http://instagram.com/">instagram</a>
+          <a href="http://reddit.com/">reddit</a>
+          <a href="http://discord.com/login">discord QR</a>
+          <a href="https://webk.telegram.org">telegram web</a>
+          <a href="http://www.twitter.com/">twitter</a>
+          <a href="https://web.whatsapp.com/">WhatsApp web</a>
+          <a href="http://www.columbusgasprices.com/">gas prices</a>
+          <a href="https://access.paylocity.com/?client_id=56400b1e4bab4790b909ace559dadbc1&redirect_uri=https://login.paylocity.com/Escher/Escher_WebUI/Membership.IdentityManager/Return&response_mode=form_post&response_type=code&scope=openid+profile+offline_access+security:credential:create+security:credential:update+security:credential:delete+security:companysecuritysettings:create+security:companysecuritysettings:delete&state=OpenIdConnect.AuthenticationProperties=agBcppeYDCA_ypNhShBrLBIO1ZeUedzafFxNS-VkSkPVvspKyCrNnh03iolA-LU4lv9-lie76gXrsgulwzBkm3IgmlrhPNIp5aH0LggJ5dhc6Magnlr2tuNJN1intncdixfb2uE2nAD7Ztw_tw1k7DZ4Mr0oeazFztzyyubhLYhSef_hQXaJef5RgoRXSSd5IbdSKUy4e5ZI13N28C8m8JYrYFOW45cBMthoamluEYKMZn-E8_6xcfl9MEi74sKxSl80efTXZPvU5nuySJ8_XbJ2pABg6VS_xgENHE0xFwUFHSQF">paylocity</a>
+          <a href="https://portal.cardaccesssite.com/web/rapid/login">rapid!</a>
+          <a href="https://www.freetaxusa.com">freetaxusa</a>
+        </div>
+      </div>
 
-   
-//$.ajax({
- // cache: false,
- // url: "https://www.uofmhealth.org/emergency-blocks-chp",
-//  method: "GET",
-//  dataType: "json",
-//  success: function(data){
- //   $.each(data, function (index, value) {
-//        var slideContainer = document.getElementById("headlinesfeed-em");
- //       for (var i = 0; i < value.length; i++) {
-//        var slideEntry = document.createElement("li");
-//        var entryTitle = value[i].node.title;
- //       var entryURL = value[i].node.url;
- //       var slideContent = "<a href='" + entryURL + "'>"   +  entryTitle + "</a>";
- //                   slideEntry.innerHTML=slideContent;
- //                   slideContainer.appendChild(slideEntry);
- //               }
- //   });
-//}
-//}); </script>
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.espn.com.mx/">espn.com.mx</a>
+          <a href="http://www.ligamx.net/">ligamx.net</a>
+          <a href="http://www.ligafemenil.mx">ligafemenil.mx</a>
+          <a href="https://www.mediotiempo.com/">mediotiempo</a>
+          <a href="https://www.esto.com.mx/">esto.com.mx</a>
+          <a href="https://www.espn.com.mx/futbol/resultados">espn resultados</a>
+          <a href="https://www.espn.com.mx/futbol/calendario">espn calendario</a>
+          <a href="http://www.rojadirecta.me/">rojadirecta.me</a>          
+          <a href="https://www.telelatinohd.com/tv-deportes.html">telelatinohd</a>
+          <a href="https://sports.caliente.mx/es_MX/calendario">caliente.mx</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/user/jarcilav">Tradeknowlogy</a>
+          <a href="https://www.youtube.com/c/jarcilav/videos">videos</a>
+          <a href="https://www.youtube.com/c/jarcilav/playlists">playlists</a>
+          <a href="https://www.youtube.com/channel/UCjKX-osBEQxj9CrZsK9ZM9g/videos">Oscar Lopez</a>          
+          <a href="https://www.youtube.com/channel/UCCbv0qixG-cyokxEY3kELtg">TradingLab</a>          
+          <a href="https://www.youtube.com/channel/UCjbEAhCd_8bEEbPbs4kJPEA">sigma option</a>
+          <a href="https://www.marydaytrader.com/curso-trading-en-bolsa-opciones/">curso Mary</a>
+          <a href="https://www.youtube.com/c/MaryDayTrader/playlists">mary day trader</a>
+          <a href="https://www.youtube.com/user/Julio1974cu/videos">Julio Cu videos</a>
+          <a href="https://www.youtube.com/c/AxeOptions/videos">Axe Options</a>
+          <a href="https://www.youtube.com/playlist?list=PLf5N6dqfQaNSDnFK64xtZ5O9tACxqrNdg" >TDA options</a>
+          <a href="https://www.youtube.com/watch?v=rDnaP-zT4us" >spreads mobile app</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/watch?v=_0e2zJFmsgc">TOS Scans</a>
+          <a href="https://www.finviz.com/">finviz.com</a>
+          <a href="https://www.barchart.com/">barchart.com</a>
+          <a href="https://www.youtube.com/watch?v=FcjZzq0HxU4">tos mobile app</a>
+          <a href="https://www.youtube.com/watch?v=R-oyaI3v4F8">tos mobile app2</a>
+          <a href="https://www.youtube.com/watch?v=Z7SBfMAiDfY">forex crypto</a>
+          <a href="https://www.youtube.com/watch?v=O4JYpaPeqbw">Heiking Ashi Swing</a>
+        </div>
+      </div>
+      
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">          
+          <a href="https://tropical100.com.do/index.php/tropical-100-salsa">tropical 100</a>
+          <a href="http://salsapalquesabe.com/">salsapalquesabe</a>
+          <a href="https://player.fastcast4u.com/catedralsalsa/#">catedral salsa</a>
+          <a href="https://www.rcast.net/dir/salsa/page2">rcast.net</a>          
+          <a href="http://www.solarlatinclub.com/">solar latin club</a>
+          <a href="https://www.youtube.com/watch?v=T0t0M2CFHp0">mix salsa brava</a>
+          <a href="http://www.salsaybachata.com/">salsa y bachata</a>
+          <a href="https://www.youtube.com/watch?v=28XnU4aOXU8">cumbias col</a>
+          <a href="https://www.youtube.com/watch?v=SDxy_CEhCts">musica de lujo</a>
+          <a href="https://www.youtube.com/watch?v=bVR5TGuYeqA">Best Blues Music</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/results?search_query=sexy+lingerie+show">lingerie show</a>
+          <a href="https://www.youtube.com/watch?v=9dblgPmgwU8">neena swim</a>        
+          <a href="https://www.youtube.com/watch?v=xyxa1d0plOo">showroom fruit</a>
+          <a href="https://www.youtube.com/watch?v=rsiDkANxTXU">Swim Fashion</a>
+          <a href="https://www.youtube.com/watch?v=9gA2uHILDqA">Frankies Bikinis</a>
+          <a href="https://www.youtube.com/watch?v=sHc3EX67GBE">Desfile Paradizia</a>
+          <a href="https://www.youtube.com/watch?v=N2ZE-kf5p2c">Miami Swim</a>
+          <a href="https://www.youtube.com/watch?v=9WQfv66LX-c">roco desfile</a>
+          <a href="https://www.youtube.com/watch?v=_SHROPvn9yA">Fruit Passion</a>
+          <a href="https://www.youtube.com/watch?v=pXBX1_O3HR0">jasmine 2019</a>
+          <a href="https://www.youtube.com/watch?v=t4Nat7Uy_OQ">luli fama 2021</a>
+          <a href="https://www.youtube.com/watch?v=KtpTw47IBK8&t">babalu 2013</a>
+          <a href="https://www.youtube.com/watch?v=3Dxk14m9xQI">Fancy Sinner</a>
+          <a href="https://www.youtube.com/watch?v=0LBfnUxE_Mc">Models Bikini</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">          
+          <a href="https://www.bestbuy.com/">bestbuy</a>
+          <a href="https://www.microcenter.com/">microcenter</a>
+          <a href="https://www.youtube.com/watch?v=rvfgrTYG4wQ">Triple Monitor</a>
+          <a href="https://www.youtube.com/watch?v=LxXITciswXc">Asus X441BA</a>
+          <a href="https://fitsewing.com/best-portable-sewing-machine/">Sewing Machine</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">
+          <a href="https://lifehacker.com/">lifehacker</a>
+          <a href="https://www.howtogeek.com/">howtogeek</a>
+          <a href="https://www.pcworld.com/howto/">pcworld</a>
+          <a href="https://www.pcmag.com/how-to">pcmag</a>
+          <a href="https://averagelinuxuser.com/">averagelinuxuser</a>
+          <a href="https://www.avoiderrors.com/">avoiderrors</a>
+          <a href="https://www.makeuseof.com/service/linux/">makeuseof linux</a>
+          <a href="https://www.taringa.net/">taringa.net</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/watch?v=A2wp8Ipxn9s">workout seniors</a>
+          <a href="https://www.youtube.com/watch?v=7KSNmziMqog">10 min workout</a>
+          <a href="https://www.youtube.com/watch?v=UyTR2EjTAXU">Tone Your Arms</a>          
+          <a href="https://www.youtube.com/watch?v=n8-FALARtJ8">15 posturas yoga</a>
+          <a href="https://www.youtube.com/watch?v=fldE8Ukcvrc">Vinyasa Yoga</a>
+          <a href="https://www.youtube.com/watch?v=PIkibAajz2w">Rhyanna Watson</a>
+          <a href="https://www.fitnessblender.com/videos/intense-at-home-hiit-routine-no-equipment-hiit-workout-video-with-low-impact-modifications">low impact</a>
+          <a href="https://www.self.com/gallery/cardio-exercises-at-home-workout">home workout</a>
+          <a href="https://www.youtube.com/watch?v=qL1BzLMsMXU">triple plancha</a>
+          <a href="https://www.youtube.com/watch?v=QhuMeVnn_qU">cardio intenso</a>
+          <a href="https://www.youtube.com/watch?v=rCau44E1F54">burpees</a>
+          <a href="https://ubiquinol.org/blog/11-yoga-poses-strength-and-flexibility">11 Yoga Poses</a>          
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon music"><img src="index_files/music.svg"></div>
+        <div class="bookmarks music">          
+          <a href="https://seriesflix.nu/">seriesflix.nu</a>
+          <a href="https://pelisplus.me/">pelisplus.me</a>
+          <a href="https://pelisplus2.org/">pelisplus2</a>
+          <a href="https://pelis-play.com/">pelis-play.com</a>
+          <a href="https://seriesmanta.in/ver-serie">seriesmanta</a>
+          <a href="https://cine24h.net/">cine24h.net</a>
+          <a href="http://www.peliculaschingonas.org/">peliculaschingonas</a>
+          <a href="https://www1.cuevana3.video/">cuevana3</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="http://www.cinehdencasa.com/">cinehdencasa</a>
+          <a href="https://novelas360.com/">novelas360</a>
+          <a href="https://tekilaz.co/">tekilaz.co</a>
+          <a href="https://seriespapaya.tv/">seriespapaya.tv</a>
+          <a href="https://cinerama91.com/">cinerama91</a>
+          <a href="https://somosmovies.com">somosmovies</a>
+          <a href="https://cliver.site/">cliver.site</a>
+          <a href="https://movidy.club">movidy.club</a>
+          <a href="https://movidy.red">movidy.red</a>
+          <a href="https://www.movidy.mobi">movidy.mobi</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://arcolinuxforum.com/viewforum.php?f=80" >Known issues</a>
+          <a href="https://forum.archlabslinux.com/t/how-to-include-systemlogs-in-your-post-when-trouble-shooting/4638" >systemlogs</a>
+          <a href="https://wiki.archlinux.org/title/Swap" >Swap</a>
+          <a href="https://pages.github.com" >GitHub Pages</a>
+          <a href="https://www.spreadsheetclass.com/make-text-lowercase-in-google-sheets-with-the-lower-function/">text lowercase</a>  
+          <a href="https://www.garron.me/en/linux/bash-password-manager.html">pwd manager</a>  
+          <a href="https://vitux.com/generation-of-a-random-password-on-linux-shell/">random password</a>  
+          <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html#17711167">link new tab</a>  
+          <a href="https://averagelinuxuser.com/backup-and-restore-your-linux-system-with-rsync/">backup restore</a>  
+          <a href="https://sangams.com.np/how-to-restore-reinstall-grub-bootloader-in-arch-linux/">Restore GRUB</a>  
+          <a href="https://itsfoss.com/apt-command-guide/" >apt Commands</a>
+          <a href="https://github.com/philc/vimium">vimium</a>
+          <a href="http://www.saberia.com/herramientas/generador-palabras/">generador palabras</a>
+          <a href="https://convertcase.net/">convert case</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://linuxhint.com/update_ubuntu_2004_command_line/">Update Ubuntu</a>  
+          <a href="https://code.luasoftware.com/tutorials/linux/lubuntu-enable-autologin/">autologin</a>  
+          <a href="https://www.tecmint.com/set-display-screen-resolution-in-ubuntu/" >screen resolution</a>
+          <a href="https://github.com/JonnyHaystack/i3-resurrect">i3-resurrect</a>  
+          <a href="https://gist.github.com/ateucher/4634038875263d10fb4817e5ad3d332f">access token</a>  
+          <a href="https://www.cnet.com/products/asus-x441ba-cba6a-14-a6-9225-4-gb-ram-500-gb-hdd/">X441BA</a>  
+          <a href="https://wiki.archlinux.org/index.php/User:Nasdack/Thinkorswim">archlinux TOS</a>  
+          <a href="https://www.reddit.com/r/archlinux/comments/juianf/is_there_a_software_that_runs_a_command_at_a_time/" >runs command</a>
+          <a href="https://archlabslinux.gitlab.io/docs/customization/nitrogen_and_feh.html" >Nitrogen Feh</a>
+          <a href="https://www.techhive.com/article/3605021/5-things-i-learned-while-setting-up-my-first-media-server.html" >media server</a>
+          <a href="https://restoreprivacy.com/google-alternatives/" >google alternatives</a>
+          <a href="https://www.youtube.com/watch?v=IhvJevHc7jE" >debian testing</a>
+          <a href="https://wiki.manjaro.org/index.php?title=ALSA" >ALSA Manjaro</a>
+          <a href="https://lecorbeausvault.wordpress.com/2021/01/15/the-basics-of-noscript/">noscript</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.freeformatter.com/html-formatter.html#ad-output">HTML Formatter</a>  
+          <a href="https://duckduckgo.com/?q=html+formatter+online&t=vivaldi&ia=answer">html formatter online</a>  
+          <a href="https://github.com/PhyTech-R0/dwm-phyOS/">phyOS</a>  
+          <a href="https://www.youtube.com/watch?v=MdklRM6zkr4">monitor laptop vieja</a>  
+          <a href="https://jacekkowalczyk82.github.io/my-debian/">LDD Linux</a>  
+          <a href="https://linuxiac.com/ubuntu-with-virtualbox/" >Ubuntu VirtualBox</a>
+          <a href="https://www.howtogeek.com/196060/beginner-geek-how-to-create-and-use-virtual-machines/" >set virtual machines</a>
+          <a href="https://www.youtube.com/watch?v=4SlP1hJutt4" >tablas dinamicas</a>
+          <a href="https://restoreprivacy.com/google-alternatives/" ></a>
+          <a href="https://www.youtube.com/watch?v=IhvJevHc7jE" ></a>
+          <a href="https://wiki.manjaro.org/index.php?title=ALSA" ></a>
+          <a href="https://lecorbeausvault.wordpress.com/2021/01/15/the-basics-of-noscript/"></a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://saschafitness.com">sascha fitness</a>
+          <a href="https://www.pizcadesabor.com/">pizcadesabor</a>
+          <a href="https://cocina.facilisimo.com/">cocina.facilisimo</a>
+          <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">coffee grinder</a>
+          <a href="https://www.seriouseats.com/">seriouseats</a>
+          <a href="https://www.youtube.com/watch?v=WTXPvCu953Q">tasties chicken</a>
+          <a href="https://www.youtube.com/watch?v=sU2PvBp1xcE">muslos in a Pan</a>
+          <a href="https://www.youtube.com/watch?v=Wiv4FTYavYQ">german sausage</a>
+          <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">Custom Earbuds</a>
+          <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">diy pegboard</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon ent"><img src="index_files/entertainment.svg"></div>
+        <div class="bookmarks ent">
+          <a href="https://www.youtube.com/watch?v=PhDqG-gZMME">optimiza Win10</a>  
+          <a href="https://www.youtube.com/watch?v=zPmqbtKwtgw" >Old PC New Server</a>
+          <a href="https://www.pcworld.com/article/563788/seven-ways-in-which-microsofts-powertoys-improves-my-life.html" >power toys</a>
+          <a href="https://www.laptopmag.com/articles/reset-windows-10-pc" >reset win10</a>
+          <a href="https://www.windowscentral.com/tips-tricks-increase-pc-performance-windows-10" >win10 performance</a>
+          <a href="https://www.youtube.com/watch?v=I88UMoRpK_o">shutdown button</a>  
+          <a href="https://github.com/lukesampson/scoop/wiki/Quick-Start" >scoop installer</a>
+          <a href="https://techrevelations.de/2018/07/21/improve-your-chuwi-tablet-with-a-clean-and-secure-windows-10-installation/">improve chuwi</a>  
+          <a href="https://www.amazon.com/dp/B01NCO6P93/">chuwi hi10 plus</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon art"><img src="index_files/art.svg"></div>
+        <div class="bookmarks art">
+          <a href="https://lifehacker.com/how-to-file-your-taxes-for-free-1846305828" >File Taxes</a>
+          <a href="https://twocents.lifehacker.com/how-to-get-organized-to-pay-off-your-debt-1844083637">debt payoff</a>
+          <a href="http://www.calcularporcentaje.es">calcular %</a>
+          <a href="https://www.superbowlsquares.org/">superbowl squares</a>
+          <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa</a>
+          <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga</a>
+          <a href="http://houston.eventful.com/events">houston eventful</a>
+        </div>
+      </div>
+
+      <div class="category">
+        <div class="icon art"><img src="index_files/art.svg"></div>
+        <div class="bookmarks art">
+          <a href="https://www.tecmint.com/free-open-source-cloud-storage-tools-for-linux/">Cloud Storage</a>
+        </div>
+      </div>
 
 
+    </div>
+    <div id="toastsContainer" class="toastsContainer"></div>
+  </div>
+  <script src="index_files/main.js"></script>
 
-</body>
 
-
-</html>
---></div></body></html>
+</body></html>
