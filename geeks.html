@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.geeksforgeeks.org/how-to-get-started-with-garuda-linux/# -->
+<html lang="en-us" prefix="og: http://ogp.me/ns#">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <!--<base target="_blank">--><base href="." target="_blank">
+      <title>GeeksforGeeks</title>
+
+
+      <link rel="stylesheet" id="custom-style-css" href="./geeks_files/gfg.min.css" media="all">
+      <script src="./geeks_files/jquery-3.6.3.min.js"></script><script src="./geeks_files/jquery-migrate-3.0.0.min.js"></script><script>var gfgObject={authUrl:"https://auth.geeksforgeeks.org/",writeApiUrl:"https://apiwrite.geeksforgeeks.org/",writeUrl:"https://write.geeksforgeeks.org/",utilUrl:"https://util.geeksforgeeks.org/",apiUrl:"https://api.geeksforgeeks.org/",cfApiUrl:"https://gfgapi.geeksforgeeks.org/",baseCompilerURL:"https://codejudge.geeksforgeeks.org/",idePageBaseUrl:"https://ide.geeksforgeeks.org/",gfgApiScriptUrl:"https://apiscript.geeksforgeeks.org/",gfgSiteUrl:"https://www.geeksforgeeks.org/",curatedListId:"1",curatedListTitle:"SDE Sheet Problems",utilDjangoCfUrl:"https://utilapi.geeksforgeeks.org/",premiumCheckoutSlug:"premium-plans-payment/",premiumLandingSlug:"premium-plans/",premiumCssUrl:"https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/gfgpremium.min.css?ver=1.1",premiumJsUrl:"https://www.geeksforgeeks.org/wp-content/themes/iconic-one/js/gfgpremium.min.js?ver=1.1",utilGoogleUrl:"https://ugprod.geeksforgeeks.org/",communityApiUrl:"https://communityapi.geeksforgeeks.org/"}</script><script async="" src="./geeks_files/gfg.min.js"></script>
+
+
+
+   </head>
+   <body
+    class="post-template-default single single-post postid-903563 single-format-standard custom-background custom-background-white" data-dark-mode="false">
+      <script>const gfgThemeList=Object.freeze({LIGHT:"gfgThemeLight",DARK:"gfgThemeDark"}),getThemeFromCookie=()=>{let a="",c=document.cookie,b=c.split(";");for(let c=0;c<b.length;c++){let d=b[c].split("=");d[0].trim()=="gfg_theme"&&(a=d[1].trim())}return a};if(!(post_slug.includes('premium-plans-payment/')||post_slug.includes('premium-plans/'))){var isDarkMode=getThemeFromCookie()==gfgThemeList.DARK;document.querySelector("body").setAttribute("data-dark-mode",isDarkMode)}function setSearchBarFocus(){const b=setTimeout(a,0);function a(){document.getElementById("gcse-search-input").focus()}}</script>
+
+
+
+
+
+
+
+         <div id="video-popup" style="display:none"></div>
+         <link rel="stylesheet" href="./geeks_files/articleList.min.css">
+         <script>$(document).ready(function(){var a=!1,b,c;$('.follow-btn').length&&(b=$(".article--recommended").offset().top,c=b+$(".article--recommended").outerHeight(),$(window).scroll(function(){var f=$(".article--recommended").offset().top,g=$(".article--recommended").offset().top+$(".article--recommended").outerHeight(),e=$(window).scrollTop()+$(window).innerHeight(),d=$(window).scrollTop();(e>f&&d<g||e>b&&d<c||d>c)&&(a||(a=!0,setTimeout(function(){loginData?.isLoggedIn?loginData.userName!==$('#followAuthor').val()?is_following():$('.profileCard-profile-picture').css('background-color','#E7E7E7'):$('.follow-btn').removeClass('hideIt')},3e3)))}))}),window.isReportArticle=!1;function report_article(){if(!loginData?.isLoggedIn){$('.header-main__wrapper').find('.header-main__signup.login-modal-btn').length&&$('.header-main__wrapper').find('.header-main__signup.login-modal-btn').click();return}window.isReportArticle?(window.scrollTo({top:0,behavior:'smooth'}),$("#report_modal_content").show()):($('.report-loader').addClass('spinner'),jQuery('#report_modal_content').load(gfgSiteUrl+'wp-content/themes/iconic-one/report-modal.php',{PRACTICE_API_URL:practiceAPIURL,PRACTICE_URL:practiceURL},function(c,b,a){b=="error"&&alert("Error: "+a.status+": "+a.statusText)}))}</script>
+         <style>.all-footer-information{width:100%!important}.footer-wrapper_links-list{margin-block-start:0!important;width:16%!important;padding-inline-start:18px!important}.gfg-footer .footer-wrapper_links-list li:first-child{padding-bottom:10px!important}.link-head{margin-bottom:0}@media only screen and (max-width:1340px){.footer-wrapper_links-list{overflow-wrap:break-word}}@media screen and (min-width:991px){.all-footer-information{padding-left:15px}}@media only screen and (max-width:980px){.footer-wrapper_branding-address{padding-top:10px}}</style>
+      </div>
+      <div id="displayModal" class="modal fade" role="dialog">
+         <div class="modal-dialog">
+            <div class="upper-box">
+               <h3 style="font:700 18px/31px var(--font-primary);color:var(--color-black)">Improve your Coding Skills with Practice</h3>
+               <button class="upper-box-btn"><a style="color:#fff!important" href="https://practice.geeksforgeeks.org/explore?page=1&amp;sortBy=submissions&amp;utm_source=gfg&amp;utm_medium=search-bar&amp;utm_campaign=practice-search">Try It!</a></button>
+            </div>
+            <div class="modal-content">
+               <div class="error-message"></div>
+               <div class="modal-body" id="dmBody">
+                  <div id="modal-dm-content"></div>
+                  <div class="modal-overlay" aria-hidden="true"><span class="loader__animation"></span></div>
+               </div>
+               <div class="modal-footer"></div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <footer class="gfg-footer" id="gfg-footer">
+         <div class="footer-wrapper">
+
+
+
+            <div class="footer-wrapper_branding">
+
+
+
+            </div>
+
+
+            <div class="all-footer-information">
+               <div class="footer-wrapper_links" style="justify-content:space-between;text-align:-webkit-left">
+                  <ul class="footer-wrapper_links-list">
+                     <li>principal</li>
+
+						<li>
+							
+                            <a href="https://docs.google.com/spreadsheets/d/1LUxBx48wfraBszht2kOt8TAAhkVxifej0_EKLOhHkoc/edit#gid=0">entradas y salidas || </a>   
+                            <a href="https://docs.google.com/spreadsheets/d/1Wvb2U3_ifRnToo9wf8LDSgTleC9Xj37S/edit#gid=1553628969" >Trading Journal TDA || </a> 
+                            <a href="http://www.bankofamerica.com/online-banking/sign-in/">bofa || </a>  
+                            <a href="https://login.1stnb.com/tob/live/usp-core/app/login/consumer">fnbtx || </a>  
+                            <a href="https://www.reliant.com/public/login/index.htm">reliant || </a>  
+                            <a href="https://www.att.com/">att.com || </a>  
+                            <a href="https://my.xfinity.com/">xfinity || </a>  
+                            <a href="https://myaccount.boostmobile.com/sign-in.html">boostmobile || </a>  
+                            <a href="http://gmail.com/">gmail || </a> 
+                            <a href="https://keep.google.com/">google keep || </a>    
+                            <a href="https://www.mint.com/">mint.com || </a>    
+                            <a href="https://www.mail.com/#.7518-header-logo1-1">mail.com || </a>     
+                            <a href="http://mail.yandex.com/">mail yandex || </a>    
+                            <a href="http://www.facebook.com/">facebook || </a>  
+                            <a href="https://secure.tdameritrade.com/login">TD Ameritrade || </a>    
+                            <a href="https://trade.thinkorswim.com/">thinkorswim web || </a> 
+                            <a href="https://www.tradesviz.com/home/" >tradesviz.com || </a> 
+                            <a href="https://app.stonkjournal.com/login" >stonkjournal || </a> 
+                            <a href="https://kinfo.com/login" >kinfo.com || </a> 
+                            <a href="https://www.gemini.com/">gemini.com || </a> 
+                            <a href="https://www.tradingview.com/" >tradingview || </a> 
+                            <a href="https://drive.google.com/drive/my-drive">My Drive || </a>    
+                            <a href="https://docs.google.com/document/d/1Vb4YjLWd0g7bsfomRSVcXavByldGmWU3Vxqt1a6ZbwE/edit">mis notas || </a>    
+                            <a href="https://github.com/ichozxc/ichozxc.github.io/blob/master/index.html">ichozxc.github.io || </a>    
+                            <a href="https://docs.google.com/spreadsheets/d/1B40h6GNh7ecSTHk9V2Y6BKrYAumResYL931kqTxIXsM/edit#gid=1206916439">quiniela || </a>    
+                            <a href="http://instagram.com/">instagram || </a>     
+                            <a href="http://reddit.com/">reddit || </a>    
+                            <a href="http://discord.com/login">discord QR || </a> 
+                            <a href="https://webk.telegram.org/">telegram web || </a>    
+                            <a href="http://www.twitter.com/">twitter || </a>    
+                            <a href="https://web.whatsapp.com/">whatsapp web || </a>    
+                            <a href="http://www.columbusgasprices.com/">gas prices || </a>    
+                            <a href="https://www.freetaxusa.com/">freetaxusa || </a>   
+                            <a href="https://www.totalwine.com">totalwine.com || </a>   
+                            <a href="https://crestapts.securecafe.com/residentservices/the-crest-5/userlogin.aspx" >The Crest || </a> 
+                            <a href="" > || </a> 
+
+                        </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>deportes</li>
+                        <li>
+							<a href="https://www.espn.com.mx/">espn.com.mx || </a>   
+                            <a href="https://espndeportes.espn.com">espndeportes || </a>   
+                            <a href="https://www.espn.com.mx/espnw/">espnw || </a>   
+                            <a href="https://www.tudn.com">tudn.com || </a>   
+                            <a href="https://www.record.com.mx">record.com.mx || </a>   
+                            <a href="https://www.marca.com/mx/">marca.com/mx || </a>   
+                            <a href="https://www.minutod.com">minutod.com || </a>   
+                            <a href="http://www.ligamx.net/">ligamx.net || </a>   
+                            <a href="http://www.ligafemenil.mx/">ligafemenil.mx || </a>   
+                            <a href="https://www.mediotiempo.com/">mediotiempo || </a>   
+                            <a href="https://www.esto.com.mx/">esto.com.mx || </a>   
+                            <a href="https://www.espn.com.mx/futbol/resultados">espn resultados || </a> 
+                            <a href="https://www.espn.com.mx/futbol/calendario">espn calendario || </a> 
+                            <a href="http://www.rojadirecta.eu">rojadirecta.eu || </a>   
+                            <a href="https://www.telelatinohd.com/">telelatinohd || </a> 
+                            <a href="https://sports.caliente.mx/es_MX/calendario">caliente.mx || </a> 
+                            <a href="https://www.youtube.com/c/marcaclaro" >marca claro || </a> 
+                            <a href=""> || </a>   
+						</li>
+                  </ul>
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important">
+					 <a class="link-head" href="https://www.geeksforgeeks.org/introduction-to-programming-languages/?ref=footer"
+					 >videos</a></li>
+
+					 
+                        <li>
+                            <a href="https://serieskao.org/" >serieskao.org || </a> 
+                            <a href="https://pelixpedia.com">pelixpedia.com || </a> 
+                            <a href="https://web.seriesflix3.com">seriesflix3 || </a> 
+                            <a href="https://www.poseidonhd.org/series/" >poseidonhd.org || </a> 
+                            <a href="https://www1.verseries.de/tv-shows/">verseries.de || </a> 
+                            <a href="https://pelisplushd.so" >pelisplushd.so || </a> 
+                            <a href="https://zonacine.lat">zonacine.lat || </a> 
+                            <a href="https://pelisplus-hd.net">pelisplus-hd.net || </a> 
+                            <a href="https://www5.pelisplushd.to">pelisplushd.to || </a> 
+                            <a href="https://pelisflix.gratis">pelisflix.gratis || </a> 
+                            <a href="https://pelisflix.help/" >pelisflix.help || </a> 
+                            <a href="https://cine24h.net/">cine24h.net || </a> 
+                            <a href="https://somosmovies.com/">somosmovies || </a> 
+                            <a href="https://www2.cuevana3.pe">cuevana3.pe || </a> 
+                            <a href="https://cuevana-3.la/cuevana/">cuevana-3.la || </a> 
+                            <a href="https://cuevaana3.one">cuevana3.one || </a> 
+                            <a href="https://cuevana3.ch">cuevana3.ch || </a> 
+                            <a href="https://www.cuevanahd.net">cuevanahd.net || </a> 
+                            <a href="https://tekilaz.co/">tekilaz.co || </a> 
+                            <a href="http://www.cinehdencasa.com/">cinehdencasa || </a> 
+                            <a href="https://novelas360.com/">novelas360 || </a> 
+                            <a href="https://cliver.site/">cliver.site || </a> 
+                            <a href="https://seriespapaya.tv/">seriespapaya.tv || </a> 
+                            <a href="https://cinerama91.com/">cinerama91 || </a> 
+                            <a href="https://movidy.club/">movidy.club || </a> 
+                            <a href="https://www.movidy.mobi/">movidy.mobi || </a> 
+                            <a href="https://seriesyonkis.lat">seriesyonkis.lat || </a> 
+                            <a href="https://pelis24.gratis">pelis24.gratis || </a> 
+                            <a href="https://www.descargandoxmega.com">descargandoxmega.com || </a> 
+                            <a href="https://www.freetv.com">freetv.com || </a> 
+                            <a href="" > || </a> 
+
+						</li>
+                  </ul>
+
+
+
+
+                  
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/?ref=footer"
+                     >inversiones</a></li>
+
+                     <li>
+							<a href="https://www.youtube.com/playlist?list=PLfT8aQL4NEhY7iDX48To2R8tOFGNgomTc">spreads || </a> 
+                            <a href="https://www.youtube.com/user/jarcilav">Tradeknowlogy || </a> 
+                            <a href="https://www.youtube.com/c/jarcilav/videos">Tradeknowlogy videos || </a> 
+                            <a href="https://educacion.tradeknowlogy.com/users/sign_in" >tradeknowlogy.com || </a> 
+                            <a href="https://www.youtube.com/@MarioStudiofl/videos">H Mario || </a> 
+                            <a href="https://www.youtube.com/@mgalpha/videos">mgalpha videos || </a> 
+                            <a href="https://www.youtube.com/channel/UCjKX-osBEQxj9CrZsK9ZM9g/videos">Oscar Lopez || </a> 
+                            <a href="https://www.youtube.com/channel/UCjbEAhCd_8bEEbPbs4kJPEA">sigma option || </a> 
+                            <a href="https://www.youtube.com/watch?v=RXWrvoth3kY" >Cuentas Pequeñas || </a> 
+                            <a href="https://www.youtube.com/playlist?list=PLf5N6dqfQaNSDnFK64xtZ5O9tACxqrNdg">TDA options || </a> 
+                            <a href="https://www.youtube.com/watch?v=rDnaP-zT4us">spreads mobile app || </a> 
+                            <a href="https://www.finviz.com/">finviz.com || </a> 
+                            <a href="https://www.barchart.com/">barchart.com || </a> 
+                            <a href="https://www.youtube.com/watch?v=FcjZzq0HxU4">tos mobile app || </a> 
+                            <a href="https://www.youtube.com/watch?v=R-oyaI3v4F8">tos mobile app 2 || </a> 
+                            <a href="https://www.youtube.com/watch?v=iogsWNinh5M" >Tracking Options Trades || </a> 
+                            <a href="https://www.reddit.com/r/options/comments/a36k4j/the_wheel_aka_triple_income_strategy_explained/">The Wheel Strategy Explained || </a> 
+                            <a href="https://www.youtube.com/@elibuyko/videos" >Eli Buyko || </a> 
+                            <a href="https://www.reddit.com/r/FuturesTrading/comments/11xm5ao/recommendations_youtube_futures_traders/">r/FuturesTrading || </a> 
+                            <a href="https://www.youtube.com/watch?v=EM6VBKMjBzI" >The Easiest Swing Trading || </a> 
+                            <a href="https://tradeknowlogy-my.sharepoint.com/:x:/p/julian_arcila/Ee4wQdlIv2tAkfsP5NY-4TMBZHGaTA-5fTSEn6UNv5mwyQ?rtime=pV1Szi3X20g" >Convertir Alertas: || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>referencia</li>
+
+                     <li>
+							<a href="https://arcolinuxforum.com/viewforum.php?f=80">Known issues || </a> 
+                            <a href="https://wiki.archlinux.org/title/Swap">Swap || </a> 
+                            <a href="https://pages.github.com/">GitHub Pages || </a> 
+                            <a href="https://www.spreadsheetclass.com/make-text-lowercase-in-google-sheets-with-the-lower-function/">text lowercase || </a>   
+                            <a href="https://www.garron.me/en/linux/bash-password-manager.html">pwd manager || </a>   
+                            <a href="https://vitux.com/generation-of-a-random-password-on-linux-shell/">random password || </a>   
+                            <a href="https://stackoverflow.com/questions/17711146/how-to-open-link-in-new-tab-on-html#17711167">link new tab || </a>   
+                            <a href="https://averagelinuxuser.com/backup-and-restore-your-linux-system-with-rsync/">backup restore || </a>   
+                            <a href="https://linuxconfig.org/howto-mount-usb-drive-in-linux">mount USB drive || </a>   
+                            <a href="https://sangams.com.np/how-to-restore-reinstall-grub-bootloader-in-arch-linux/">Restore GRUB || </a>   
+                            <a href="https://www.makeuseof.com/how-check-maximum-ram-capacity/">maximum RAM || </a> 
+                            <a href="http://www.saberia.com/herramientas/generador-palabras/">generador palabras || </a> 
+                            <a href="https://convertcase.net/">convert case || </a> 
+                            <a href="https://www.tecmint.com/set-display-screen-resolution-in-ubuntu/">screen resolution || </a> 
+                            <a href="https://github.com/JonnyHaystack/i3-resurrect">i3-resurrect || </a>   
+                            <a href="https://www.cnet.com/products/asus-x441ba-cba6a-14-a6-9225-4-gb-ram-500-gb-hdd/">X441BA || </a>   
+                            <a href="https://www.reddit.com/r/archlinux/comments/juianf/is_there_a_software_that_runs_a_command_at_a_time/">runs command || </a> 
+                            <a href="https://archlabslinux.gitlab.io/docs/customization/nitrogen_and_feh.html">Nitrogen Feh || </a> 
+                            <a href="https://www.freeformatter.com/html-formatter.html#ad-output">HTML Formatter || </a>   
+                            <a href="https://duckduckgo.com/?q=html+formatter+online&amp;t=vivaldi&amp;ia=answer">html formatter online || </a>   
+                            <a href="https://wiki.archlinux.org/title/Install_Arch_Linux_via_SSH">via ssh || </a>   
+                            <a href="https://www.youtube.com/watch?v=MdklRM6zkr4">monitor laptop vieja || </a>   
+                            <a href="https://www.makeuseof.com/things-you-can-do-with-kde-connect-on-linux/" >KDE Connect || </a> 
+                            <a href="https://www.youtube.com/watch?v=k0AXOYDu3so" >create home server || </a> 
+                            <a href="https://www.geany.org/download/themes/" >geany themes || </a> 
+                            <a href="https://tldp.org/REF/palmdevqs/index.html" >Linux Palm Developer || </a> 
+                            <a href="https://www.computerhope.com/sindex.htm" >computerhope || </a> 
+                            <a href="https://www.freecodecamp.org/news/linux-command-line-tutorial/" >freecodecamp || </a> 
+                            <a href="https://www.instructables.com/projects" >instructables projects || </a> 
+                            <a href="https://linuxhint.com" >linuxhint.com || </a> 
+                            <a href="https://pethelpful.com/02" >pethelpful.com || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+
+
+
+                  </ul>
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important">
+						 <a class="link-head" href="https://www.geeksforgeeks.org/web-development/?ref=footer"
+						 >entretenimiento</a></li>
+
+                     <li>
+							<a href="https://tropical100.com.do/index.php/salsa">tropical 100 || </a>    
+                            <a href="http://radio.zonasalsa.info">ZonaSalsaRadio.Com || </a>   
+                            <a href="https://player.fastcast4u.com/catedralsalsa/#">catedral de la salsa || </a>    
+                            <a href="https://www.rcast.net/dir/salsa/page2">rcast.net || </a>    
+                            <a href="http://www.solarlatinclub.com/">solar latin club || </a>    
+                            <a href="https://www.youtube.com/watch?v=SDxy_CEhCts">musica de lujo || </a> 
+                            <a href="https://www.youtube.com/watch?v=bVR5TGuYeqA">Best Blues Music || </a> 
+                            <a href="https://www.youtube.com/results?search_query=sexy+lingerie+show">sexy lingerie show || </a>    
+                            <a href="https://www.youtube.com/watch?v=PhOFh2-bfZU">Black Tape Project 2022 || </a> 
+                            <a href="https://www.youtube.com/watch?v=9dblgPmgwU8">neena swim || </a> 
+                            <a href="https://www.youtube.com/watch?v=xyxa1d0plOo">showroom fruit || </a>    
+                            <a href="https://www.youtube.com/watch?v=rsiDkANxTXU">Swim Fashion || </a>    
+                            <a href="https://www.youtube.com/watch?v=9gA2uHILDqA">Frankies Bikinis || </a>    
+                            <a href="https://www.youtube.com/watch?v=sHc3EX67GBE">Desfile Paradizia || </a>    
+                            <a href="https://www.youtube.com/watch?v=N2ZE-kf5p2c">Miami Swim || </a>    
+                            <a href="https://www.youtube.com/watch?v=9WQfv66LX-c">roco desfile cafe || </a>    
+                            <a href="https://www.youtube.com/watch?v=_SHROPvn9yA">Fruit de la Passion || </a>    
+                            <a href="https://www.youtube.com/watch?v=pXBX1_O3HR0">jasmine 2019 || </a>    
+                            <a href="https://www.youtube.com/watch?v=t4Nat7Uy_OQ">luli fama 2021 || </a>    
+                            <a href="https://www.youtube.com/watch?v=KtpTw47IBK8&amp;t">babalu 2013 || </a>   
+                            <a href="https://www.youtube.com/watch?v=3Dxk14m9xQI">Fancy Sinner || </a>
+                            <a href="https://www.youtube.com/watch?v=0LBfnUxE_Mc">Models Bikini || </a> 
+                            <a href="" > || </a> 
+
+					</li>
+                  </ul>
+               </div>
+
+
+               <div class="footer-wrapper_links" style="justify-content:space-between;text-align:-webkit-left">
+                  <ul class="footer-wrapper_links-list" style="margin-block-start:0;width:16%;padding-inline-start:18px">
+                     <li style="padding-bottom:10px!important"><a class="link-head" href="https://www.geeksforgeeks.org/gate-cs-notes-gq/?ref=footer"
+                     >lectura</a></li>
+
+                     <li>
+                            <a href="https://christitus.com" >christitus | | </a> 
+							<a href="https://www.instructables.com" >instructables | | </a> 
+                            <a href="https://hackaday.com" >hackaday | | </a> 
+                            <a href="https://blog.desdelinux.net/en/" >desdelinux.net || </a> 
+                            <a href="https://lifehacker.com/">lifehacker || </a>   
+                            <a href="https://www.howtogeek.com/">howtogeek || </a>  
+                            <a href="https://www.pcworld.com/search?q=linux#gsc.tab=0&gsc.q=linux&gsc.page=1">pcworld linux || </a>  
+                            <a href="https://www.pcmag.com/search/results?query=linux">pcmag linux || </a>  
+                            <a href="https://averagelinuxuser.com/">averagelinuxuser || </a>  
+                            <a href="https://www.avoiderrors.com/">avoiderrors || </a>  
+                            <a href="https://www.makeuseof.com/service/linux/">makeuseof linux || </a>  
+                            <a href="https://www.taringa.net/">taringa.net || </a>  
+                            <a href="https://systemcrafters.net" >systemcrafters.net || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/python-programming-language/?ref=footer"
+                     >fitness</a></li>
+
+                     <li>
+							<a href="https://www.youtube.com/watch?v=A2wp8Ipxn9s">workout seniors || </a> 
+                            <a href="https://www.youtube.com/watch?v=7KSNmziMqog">10 min workout || </a> 
+                            <a href="https://www.youtube.com/watch?v=UyTR2EjTAXU">Tone Your Arms || </a> 
+                            <a href="https://www.youtube.com/watch?v=n8-FALARtJ8">15 posturas yoga || </a> 
+                            <a href="https://www.youtube.com/watch?v=fldE8Ukcvrc">Vinyasa Yoga || </a> 
+                            <a href="https://www.youtube.com/watch?v=PIkibAajz2w">Rhyanna Watson</a> 
+                            <a href="https://www.fitnessblender.com/videos/intense-at-home-hiit-routine-no-equipment-hiit-workout-video-with-low-impact-modifications">low impact || </a> 
+                            <a href="https://www.self.com/gallery/cardio-exercises-at-home-workout">home workout || </a> 
+                            <a href="https://www.youtube.com/watch?v=qL1BzLMsMXU">triple plancha || </a> 
+                            <a href="https://www.youtube.com/watch?v=QhuMeVnn_qU">cardio intenso || </a> 
+                            <a href="https://www.youtube.com/watch?v=rCau44E1F54">burpees || </a> 
+                            <a href="https://ubiquinol.org/blog/11-yoga-poses-strength-and-flexibility">11 Yoga Poses || </a> 
+                            <a href="https://www.youtube.com/watch?v=nLBtuHzpNXw" >Tres Estiramientos || </a> 
+                            <a href="" > || </a> 
+
+				     </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>diy | cocina</li>
+
+                     <li>
+							<a href="https://saschafitness.com/">sascha fitness || </a> 
+                            <a href="https://www.pizcadesabor.com/">pizcadesabor || </a> 
+                            <a href="https://cocina.facilisimo.com/">cocina.facilisimo || </a> 
+                            <a href="https://food-hacks.wonderhowto.com/how-to/5-surprising-uses-for-your-coffee-grinder-0166732/">coffee grinder || </a> 
+                            <a href="https://www.seriouseats.com/">seriouseats || </a> 
+                            <a href="https://www.youtube.com/watch?v=WTXPvCu953Q">tasties chicken || </a> 
+                            <a href="https://www.youtube.com/watch?v=sU2PvBp1xcE">muslos in a Pan || </a> 
+                            <a href="https://www.youtube.com/watch?v=Wiv4FTYavYQ">german sausage || </a> 
+                            <a href="https://www.youtube.com/watch?v=lmk-y_9exJ8">Custom Earbuds || </a> 
+                            <a href="https://lifehacker.com/diy-pegboard-home-network-wall-400093">diy pegboard || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/devops-tutorial/?ref=footer"
+                     >varios links</a></li>
+
+                     <li>
+							<a href="https://lifehacker.com/how-to-file-your-taxes-for-free-1846305828">File Taxes || </a> 
+                            <a href="https://twocents.lifehacker.com/how-to-get-organized-to-pay-off-your-debt-1844083637">debt payoff || </a> 
+                            <a href="https://www.disfrutalasmatematicas.com/numeros/convirtiendo-porcentajes-decimales.html">porcentajes decimales || </a> 
+                            <a href="http://www.calcularporcentaje.es/">calcular % || </a> 
+                            <a href="https://www.superbowlsquares.org/">superbowl squares || </a> 
+                            <a href="https://www.youtube.com/watch?v=7rPLg1LTGwk">polla eurocopa || </a> 
+                            <a href="http://www.tripletsandus.com/80s/80s_games/html5_galaga.htm">play galaga || </a> 
+                            <a href="http://houston.eventful.com/events">houston eventful || </a> 
+                            <a href="https://www.youtube.com/watch?v=tQqe6JF99Oc" >True Metrix GO || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/competitive-programming-a-complete-guide/?ref=footer"
+                     >win related</a></li>
+
+                     <li>
+							<a href="https://www.tenforums.com/tutorials/1950-clean-install-windows-10-a.html#25">win10 local account || </a> 
+                            <a href="https://www.youtube.com/watch?v=PhDqG-gZMME">optimiza Win10 || </a> 
+                            <a href="https://www.pcworld.com/article/563788/seven-ways-in-which-microsofts-powertoys-improves-my-life.html">powertoys || </a> 
+                            <a href="https://www.laptopmag.com/articles/reset-windows-10-pc">reset win10 || </a> 
+                            <a href="https://www.windowscentral.com/tips-tricks-increase-pc-performance-windows-10">win10 performance || </a> 
+                            <a href="https://www.youtube.com/watch?v=I88UMoRpK_o">shutdown button || </a> 
+                            <a href="https://github.com/lukesampson/scoop/wiki/Quick-Start">scoop Quick-Start || </a> 
+                            <a href="https://www.amazon.com/dp/B01NCO6P93/">chuwi hi10 plus || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/system-design-tutorial/?ref=footer"
+                     >shopping</a></li>
+
+                     <li>
+							<a href="https://www.bestbuy.com/">bestbuy || </a>   
+                            <a href="https://www.microcenter.com/">microcenter || </a>   
+                            <a href="https://www.youtube.com/watch?v=rvfgrTYG4wQ">Triple Monitor || </a>   
+                            <a href="https://www.youtube.com/watch?v=LxXITciswXc">Asus X441BA || </a>   
+                            <a href="https://fitsewing.com/best-portable-sewing-machine/">Sewing Machine || </a>   
+                            <a href="https://www.lorenzobettini.it/2023/01/installing-arch-linux-the-not-so-hard-way/" >Arch Linux BTRFS || </a> 
+                            <a href="https://www.lorenzobettini.it/2023/03/snapper-and-grub-btrfs-in-arch-linux/" >Snapper grub-btrfs || </a> 
+                            <a href="https://www.reddit.com/r/archlinux/comments/11izpbw/how_to_create_a_reliable_snapper_setup_for/?rdt=58343" >Snapper CLI || </a> 
+                            <a href="" > || </a> 
+
+					 </li>
+                  </ul>
+               </div>
+
+
+
+               <div class="footer-wrapper_links" style="justify-content:space-between;text-align:-webkit-left">
+                  <ul class="footer-wrapper_links-list" style="margin-block-start:0;width:16%;padding-inline-start:18px">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/company-interview-corner/?ref=footer"
+                     >X X X</a></li>
+
+                     <li>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X        X                                        X || </a>
+
+					 </li>
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/geeksforgeeks-school/?ref=footer"
+                     >X X X</a></li>
+
+                     <li>
+						    <a href="" > || </a>
+
+						  </li>
+                  </ul>
+                  <ul class="footer-wrapper_links-list">
+                     <li style="padding-bottom:10px!important"><a class="link-head"
+                     href="https://www.geeksforgeeks.org/commerce/?ref=footer"
+                     >X X X</a></li>
+
+                     <li>
+						    <a href="" > || </a>
+
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>X X X</li>
+                     <li>
+						    <a href="" > || </a>
+
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>X X X</li>
+                     
+                     <li>
+						    <a href="" > || </a>
+
+                  </ul>
+
+
+                  <ul class="footer-wrapper_links-list">
+                     <li>X X X</li>
+                     
+                     <li>
+						    <a href="" > || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+						    <a href="" >X  X  X  X  X  X  X  X  X  X  X  X X X X X X X X X X X X || </a>
+
+                  </ul>
+
+               </div>
+            </div>
+         </div>
+
+
+   </body>
+
+
+
+
+</html>
